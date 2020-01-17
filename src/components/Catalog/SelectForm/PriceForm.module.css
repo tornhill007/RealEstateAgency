@@ -1,0 +1,28 @@
+.itemList {
+    list-style-type: none;
+}
+
+.itemInput {
+    width: 55px;
+    margin-left: 5px;
+}
+
+.wrapperList {
+    display: flex;
+    justify-content: left;
+
+}
+
+.itemLists {
+   margin-left: 30px;
+   list-style-type: none;
+}
+
+
+.submit {
+    padding: 0 8px 0 8px;
+    background-color: #555457;
+    color: white;
+    border: none;
+    margin-top: 2px;
+}

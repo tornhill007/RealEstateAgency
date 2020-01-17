@@ -1,7 +1,16 @@
 import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
 
 import userReducer from "./userReducer";
+import authReducer from "./authReducer";
+import RealtorsReducer from "./RealtorsReducer";
+import ApartmentsReducer from "./ApartmentsReducer";
 
 export default combineReducers({
-    user: userReducer
+
+    user: userReducer,
+    auth: authReducer,
+    form: formReducer,
+    realtorsPage: RealtorsReducer,
+    apartmentsPage: ApartmentsReducer
 });

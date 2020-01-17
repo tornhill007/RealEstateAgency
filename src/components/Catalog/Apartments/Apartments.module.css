@@ -1,0 +1,109 @@
+/*.wrapper {*/
+/*    padding-top: 90px;*/
+/*    margin-left: 170px;*/
+/*    font-family: cursive;*/
+/*  */
+/*}*/
+
+/*.itemLink {*/
+/*    background-color: #ececec;*/
+
+/*    border-bottom: 1px solid #c0c0c0;*/
+/*    cursor: pointer;*/
+/*    text-align: center;*/
+/*    padding: 20px;*/
+/*    color: #555457;*/
+
+/*}*/
+
+/*.itemLink:hover {*/
+/*    background-color: #f2f2f2;*/
+/*    box-shadow: 0 -1px 7.2px 2.8px rgba(57,100,151,0.2);*/
+/*    color: #97004E;*/
+/*    text-decoration: none;*/
+/*}*/
+
+.img {
+    width: 100%;
+}
+
+.imgWrap {
+    width: 40%;
+}
+
+.wrapContent {
+    width: 45%;
+    padding: 10px 0 10px 0;
+}
+
+.itemDesc {
+    line-height: 1;
+}
+
+.wrapContentAdd {
+    width: 20%;
+    padding: 10px 25px 5px 5px;
+}
+
+.wrapContentBlock {
+    padding: 0 25px 0 25px;
+    border-right: 1px solid gray;
+}
+
+/*.imgWrap {*/
+/*    width: ;*/
+/*}*/
+
+
+
+.wrapperBlock {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.wrapContent span {
+    display: block;
+
+}
+
+.wrapContentAdd span {
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.itemContainer {
+    margin-top: 15px;
+
+}
+
+.itemDisc {
+    font-size: 0.9em;
+}
+
+.wrapContentBlock {
+
+}
+
+.itemView {
+    font-size: 0.9em;
+    color: #2c536c;
+}
+
+.itemLink {
+    color: #2c536c;
+}
+
+.itemUsd {
+    font-size: 1.3em;
+}
+
+.itemRoom {
+    font-size: 1.2em;
+}
+
+.itemArea {
+    font-size: 1.2em;
+}

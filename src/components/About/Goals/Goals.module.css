@@ -1,0 +1,36 @@
+.wrapper {
+    padding-top: 56px;
+    margin-left: 190px;
+    font-family: cursive;
+}
+
+.head {
+    padding-top: 70px;
+    padding-left: 70px;
+    margin-top: 20px;
+}
+
+.item {
+    padding: 25px 70px 0 70px;
+    font-size: 1.2em;
+}
+
+.itemText {
+    color: blue;
+    font-weight: bold;
+}
+
+.item1 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.wrapper img {
+    width: 70%;
+}
+
+.imgWrap {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}

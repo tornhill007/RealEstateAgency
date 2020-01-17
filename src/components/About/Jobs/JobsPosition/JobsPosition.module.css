@@ -1,0 +1,44 @@
+.wrapper {
+    padding-top: 56px;
+    margin-left: 170px;
+    font-family: cursive;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-wrap: wrap;*/
+    /*background-color: black;*/
+    display: flex;
+    justify-content: center;
+}
+
+/*.wrapperBlock {*/
+/*    background-color: white;*/
+/*    width: 85%;*/
+/*}*/
+
+.head {
+    padding-top: 70px;
+    padding-left: 70px;
+    margin-top: 20px;
+}
+
+.item {
+    padding: 40px 70px 0 70px;
+    font-size: 1.2em;
+
+}
+
+.item li {
+    padding-top: 20px;
+}
+
+.item span {
+    text-decoration: underline;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
+    color: #97004E;
+}
+
+.item a {
+    color: #97004E;
+    text-decoration: none;
+}

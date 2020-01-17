@@ -1,0 +1,82 @@
+.img {
+
+}
+
+.wrapper {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.itemLeft {
+    width: 40%;
+    background-color: white;
+    font-size: 0.9em;
+    font-family: fantasy;
+}
+
+.itemRight {
+    width: 60%;
+    background-color: gray;
+}
+
+.imgWrap {
+    display: flex;
+    justify-content: center;
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    width: 100%;
+}
+
+.wrapperContacts {
+    background-color: black;
+    padding-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 170px;
+}
+
+.border {
+    padding: 10px;
+    width: 180px;
+    border: black solid 1px;
+}
+
+.time {
+    float: right;
+}
+
+.itemList {
+    list-style-type: none;
+}
+
+.itemLeftWrapper {
+    margin: 50px;
+}
+
+.emblem {
+    width: 35%;
+}
+
+.itemText {
+    margin-top: 50px;
+}
+
+.timeWrapper span {
+    display: block;
+}
+
+.itemInfo span{
+    display: block;
+}
+
+.emblemPhone {
+    width: 8%;
+    margin-right: 10px;
+}

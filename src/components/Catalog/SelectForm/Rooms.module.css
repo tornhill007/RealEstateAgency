@@ -1,0 +1,22 @@
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    width: 33.3%;
+}
+
+.submit {
+    padding: 0 8px 0 8px;
+    background-color: #555457;
+    color: white;
+    border: none;
+    margin-top: 2px;
+}
+
+.submitWrap {
+    text-align: right;
+    margin-right:  5px;
+}

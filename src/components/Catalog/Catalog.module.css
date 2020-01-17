@@ -1,0 +1,91 @@
+.wrapper {
+    padding-top: 90px;
+    margin-left: 170px;
+    font-family: cursive;
+    /*background-color: black;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-wrap: wrap;*/
+    background-color: #e0e3e5;
+}
+
+.itemLink {
+    background-color: #ececec;
+
+    border-bottom: 1px solid #c0c0c0;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    color: #555457;
+
+}
+
+.itemLink:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0 -1px 7.2px 2.8px rgba(57,100,151,0.2);
+    color: #97004E;
+    text-decoration: none;
+}
+
+.head {
+    padding-top: 80px;
+    padding-left: 200px;
+    /*margin-top: 20px;*/
+}
+
+.wrapperBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.itemLeft {
+    width: 30%;
+    padding-right: 30px;
+}
+
+.itemRight {
+    width: 65%;
+}
+
+.itemSpan {
+
+    display: flex;
+    align-items: center;
+}
+
+.itemWrapperHead {
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+    font-size: 1.5em;
+}
+
+.wrapContent {
+    padding: 30px;
+    background-color: teal;
+}
+
+.itemFormWrap {
+
+}
+
+.submitWrap {
+    display: inline;
+    margin-left: 15px;
+}
+
+.submit {
+    padding: 0 8px 0 8px;
+    background-color: #555457;
+    color: white;
+    border: none;
+    margin-top: 2px;
+}
+
+.label {
+    display: inline;
+}
+
+.itemFormWrap {
+    padding: 15px 0 15px 0;
+}

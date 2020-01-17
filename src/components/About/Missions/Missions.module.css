@@ -1,0 +1,17 @@
+.wrapper {
+    padding-top: 56px;
+    margin-left: 190px;
+    font-family: cursive;
+}
+
+.head {
+    padding-top: 70px;
+    padding-left: 70px;
+    margin-top: 20px;
+}
+
+.item {
+    padding: 40px 70px 0 70px;
+    font-size: 1.2em;
+}
+
