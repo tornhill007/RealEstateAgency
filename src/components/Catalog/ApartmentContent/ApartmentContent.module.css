@@ -8,3 +8,8 @@
     /*flex-wrap: wrap;*/
     background-color: #e0e3e5;
 }
+
+.wrapHead {
+    display: flex;
+    justify-content: space-between;
+}
