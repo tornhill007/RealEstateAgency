@@ -1,84 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="545ff94d-7ba1-4909-ba7a-8bc33d0ebfce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/FormsControl/FormsControl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/FormsControl/FormsControl.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/style/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/About.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Goals/Goals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Goals/Goals.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Jobs/Jobs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Jobs/Jobs.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Jobs/JobsPosition.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Jobs/JobsPosition/JobsPosition.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Jobs/JobsPosition/consts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Missions/Missions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Missions/Missions.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Realtors/Realtors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Realtors/Realtors.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/Realtors/RealtorsContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/Apartments/Apartments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/Apartments/Apartments.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/Apartments/ApartmentsContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/Area.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/AreaForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/Building.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/BuildingForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/Complex.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/ComplexForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/District.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/DistrictForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/PriceForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/PriceForm.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/Repair.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/RepairForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/Rooms.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/RoomsForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/Select.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Catalog/SelectForm/SelectForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/Contacts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/Contacts.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/Map/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/Map/Map.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Main.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/BreadCrumbs.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/BreadScrumbs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Register/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Register/Register.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Reviews/Reviews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Reviews/Reviews.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Selling/Selling.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Selling/Selling.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/MainLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/ApartmentsReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/RealtorsReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/authReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/combineReducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/combineReducers.js" afterDir="false" />
-    </list>
+    <list default="true" id="545ff94d-7ba1-4909-ba7a-8bc33d0ebfce" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Catalog/Apartments/Apartments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="141" column="66" lean-forward="true" selection-start-line="141" selection-start-column="66" selection-end-line="141" selection-end-column="66" />
+            <state relative-caret-position="131">
+              <caret line="136" column="37" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -570,18 +493,17 @@
       <workItem from="1579021869601" duration="3171000" />
       <workItem from="1579208013641" duration="9404000" />
       <workItem from="1579279660609" duration="10545000" />
-      <workItem from="1579292309529" duration="9272000" />
+      <workItem from="1579292309529" duration="9563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189038000" />
+    <option name="totallyTimeSpent" value="189329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24944155" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24944155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -595,7 +517,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32840723" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32840723" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1066,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Catalog/Apartments/Apartments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="141" column="66" lean-forward="true" selection-start-line="141" selection-start-column="66" selection-end-line="141" selection-end-column="66" />
+        <state relative-caret-position="131">
+          <caret line="136" column="37" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

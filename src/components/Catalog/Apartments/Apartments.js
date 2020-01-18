@@ -159,13 +159,13 @@ const Apartments = (props) => {
                             <text className={classes.usd}>USD</text>
                         </span>
                         <span className={classes.itemRoom}>
-                            {u.roomNumber}
+                            {u.price}
                         </span>
                         <span className={classes.itemArea}>
                             {u.area} m<sup>2</sup>
                         </span>
                         <span className={classes.itemView}>
-                            View apartment
+                            View apartment1
                         </span>
                     </div>
                 </NavLink> : null )
