@@ -5,6 +5,7 @@ import userReducer from "./userReducer";
 import authReducer from "./authReducer";
 import RealtorsReducer from "./RealtorsReducer";
 import ApartmentsReducer from "./ApartmentsReducer";
+import ApartmentContentReducer from "./ApartmentContentReducer";
 
 export default combineReducers({
 
@@ -12,5 +13,7 @@ export default combineReducers({
     auth: authReducer,
     form: formReducer,
     realtorsPage: RealtorsReducer,
-    apartmentsPage: ApartmentsReducer
+    apartmentsPage: ApartmentsReducer,
+    contentPage: ApartmentContentReducer,
+
 });

@@ -36,6 +36,13 @@
     padding: 10px 0 10px 0;
 }
 
+.wrapperBlock:hover {
+    box-shadow: 0 0 6px 3px teal;
+    background-color: #e0e3e5;
+    text-decoration: none;
+    color: #261b27;
+}
+
 .itemDesc {
     line-height: 1;
 }
@@ -61,6 +68,7 @@
     justify-content: center;
     margin-top: 25px;
     background-color: white;
+    color: #261b27;
 }
 
 .wrapContent span {

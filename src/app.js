@@ -28,6 +28,7 @@ import Goals from "./components/About/Goals/Goals";
 import Jobs from "./components/About/Jobs/Jobs";
 import JobsPosition from "./components/About/Jobs/JobsPosition";
 import RealtorsContainer from "./components/About/Realtors/RealtorsContainer";
+import ApartmentContentContainer from "./components/Catalog/ApartmentContent/ApartmentContentContainer";
 
 
 function App() {
@@ -47,9 +48,10 @@ function App() {
                     <Route path="/about">
                         <About/>
                     </Route>
-                    <Route path="/catalog">
-                        <Catalog/>
-                    </Route>
+                    <Route path="/catalog/:id" component={ApartmentContentContainer}/>
+
+                    <Route path="/catalog" component={Catalog}/>
+
                     <Route path="/contacts">
                         <Contacts/>
                     </Route>
