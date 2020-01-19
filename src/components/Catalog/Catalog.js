@@ -34,7 +34,7 @@ const Catalog = (props) => {
         <div className={classes.wrapper}>
             <div className={classes.wrapperBlock}>
                 <div className={classes.itemLeft}>
-                    <div>
+                    <div className={classes.itemLinkWrap}>
                         <NavLink to="" className={classes.itemLink}>
                             <span>Apartments for rent</span>
                         </NavLink>

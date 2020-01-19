@@ -1,0 +1,51 @@
+.footerWrapper {
+    background-color: #222222;
+    color: floralwhite;
+    z-index: 998;
+    font-size: 0.8em;
+}
+
+.socialWrap {
+    width: 8%;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 110px 0 110px;
+}
+
+.item {
+
+    width: 33.3%;
+    padding: 15px 0 10px 15px;
+}
+
+/*.item img {*/
+/*    margin: 0 20px 0 20px;*/
+/*}*/
+
+.socialWrap {
+    margin: 0 10px 0 10px;
+}
+.wrap {
+    z-index: 999;
+}
+
+.emblemWrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.socialContact {
+    width: 16%;
+}
+
+.socialWrap:hover {
+    box-shadow: 0 0 6px 3px teal;
+    border-radius: 50%;
+    background-color: white;
+}

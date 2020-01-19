@@ -24,132 +24,148 @@ const ApartmentContent = (props) => {
 
 
     return <div className={classes.wrapper}>
-        <div className={classes.wrapHead}>
-            <div>
-                <span>Return to catalog</span>
-            </div>
-            <div>
-                <span>{content.advertName}</span>
-            </div>
-            <div>Sharing</div>
-            <div>
-                <span>Submit your application</span>
-            </div>
-        </div>
-        <div className={classes.wrapHead}>
-            <span>{content.location}</span>
-            <span>{content.complex}</span>
-            <span>ID:{content.id}</span>
-            <span>Main information</span>
-            <span>Equipment</span>
-        </div>
-        <div>
-            <div>
-                <span>Galery</span>
-                <MyGallery/>
-            </div>
-            <div>
-                <div>
+        <div className={classes.wrapperBlock}>
+            <div className={classes.wrapHead}>
+                <div className={classes.WrapHeadLeft}>
+                    <div className={classes.btnReturnWrap}>
+                        <NavLink to='/catalog' className={classes.btnReturn}>&lt; Return to catalog</NavLink>
+                    </div>
+                    <div className={classes.itemHeadLeft}>
+                        <span>{content.advertName}</span>
+                    </div>
+                </div>
+                <div className={classes.WrapHeadRight}>
+                    <div className={classes.itemHeadRight}>Sharing</div>
                     <div>
-                        <span>
-                            Room
-                        </span>
-                        <span>
-                            {content.roomAmount}
-                        </span>
-                        <div>
+                        <span className={classes.btnSubmitApp}>Submit your application</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div className={classes.wrapHead}>
+                    <div>
+                        <span>{content.location}</span>
+                        <span className={classes.itemGaleryHead}>{content.complex}</span>
+                    </div>
+                    <div className={classes.itemGalerySpan}>
+                        <span>ID:{content.id}</span>
+                        <span>Main information</span>
+                        <span>Equipment</span>
+                    </div>
+                </div>
+                <div className={classes.galleryWrapper}>
+                    <div className={classes.itemWrapLeft}>
+                        <MyGallery arrayContent={content.images}/>
+                    </div>
+                    <div className={classes.itemWrapRight}>
+                        <div className={classes.containerHead}>
+                            <div className={classes.itemContainer}>
+                                <span>
+                                    Room
+                                </span>
+                                <span>
+                                    {content.roomAmount}
+                                </span>
+                                <div className={classes.itemRoomDesc}>
                             <span>
                                 {content.roomDesc}
                             </span>
-                        </div>
-                    </div>
-                    <div>
+                                </div>
+                            </div>
+                            <div className={classes.itemContainer}>
                         <span>
                             Area
                         </span>
-                        <span>
+                                <span>
                             {content.area} m<sup>2</sup>
                         </span>
-                        <div>
+                                <div className={classes.itemRoomDesc}>
                             <span>
                                 {content.areaLiving} m<sup>2</sup> Living
                             </span>
-                            <span>
+                                    <span>
                                 {content.areaKitchen} m<sup>2</sup> Kitchen
                             </span>
-                        </div>
-                    </div>
-                    <div>
+                                </div>
+                            </div>
+                            <div className={classes.itemContainer}>
                         <span>
                             Price
                         </span>
-                        <span>
+                                <span>
                             {content.price} USD
                         </span>
-                        <div>
-                            <span>For 1 m<sup>2</sup></span>
-                            <span>{content.priceMetr}</span>
+                                <div className={classes.itemRoomDesc}>
+                                    <span>For 1 m<sup>2</sup></span>
+                                    <span>{content.priceMetr} USD</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
+                        <div className={classes.itemRoomDescName}>
+                            <div>
                         <span>
                             Description
                         </span>
-                    </div>
-                    <div>
+                            </div>
+                            <div className={classes.itemRoomDesc}>
                         <span>
                             {content.descriptionFull}
                         </span>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <span>Floor</span>
+                            </div>
                         </div>
-                        <div>
-                            <FontAwesomeIcon icon={faBuilding} className={classes.icon} />
-                            <span>
+                        <div className={classes.containerMenu}>
+                            <div className={classes.itemContainer}>
+                                <div>
+                                    <span>Floor</span>
+                                </div>
+                                <div className={classes.itemRoomDesc}>
+                                    <div>
+                                    <FontAwesomeIcon icon={faBuilding} size='2x' className={classes.icon}/>
+                                    </div>
+                                    <span>
                                 {content.floor} floor from {content.floorMax}
                             </span>
-                            <span>
+                                    <span>
                                 {content.building}
                             </span>
-                            <span>
+                                    <span>
                                 {content.elevator}
                             </span>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <span>Layout</span>
-                        </div>
-                        <div>
-                            <FontAwesomeIcon icon={faHome} className={classes.icon} />
-                            <span>
+                                </div>
+                            </div>
+                            <div className={classes.itemContainer}>
+                                <div>
+                                    <span>Layout</span>
+                                </div>
+                                <div className={classes.itemRoomDesc}>
+                                    <FontAwesomeIcon icon={faHome} size='2x' className={classes.icon}/>
+                                    <span>
                                 {content.layout}
                             </span>
+                                </div>
+                            </div>
+                            <div className={classes.itemContainer}>
+                                <div>
+                                    <span>Repair</span>
+                                </div>
+                                <div className={classes.itemRoomDesc}>
+                                    <FontAwesomeIcon icon={faTools} size='2x' className={classes.icon}/>
+                                    <span>{content.repair}</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <span>Repair</span>
+                        <div className={classes.itemRoomDescName}>
+                            <div>
+                                <span>The contact person</span>
+                            </div>
+                            <div className={classes.itemRoomDesc}>
+                                <img
+                                    src="https://kievintlrealty.com.ua/assets/main_avatar-5042ba84db413fc4b17edfeb0ab4456a3f6b76e90fab5407d9018fdd9792a6da.jpg"
+                                    alt="photoOwner"/>
+                                <span className={classes.itemContact}>Admin</span>
+                            </div>
                         </div>
-                        <div>
-                            <FontAwesomeIcon icon={faTools} className={classes.icon} />
-                            <span>{content.repair}</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <span>The contact person</span>
-                    </div>
-                    <div>
-                        <img src="https://kievintlrealty.com.ua/assets/main_avatar-5042ba84db413fc4b17edfeb0ab4456a3f6b76e90fab5407d9018fdd9792a6da.jpg" alt="photoOwner"/>
-                        <span>Admin</span>
                     </div>
                 </div>
             </div>

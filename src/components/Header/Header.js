@@ -16,7 +16,7 @@ const Header = (props) => {
                         <NavDropdown.Item as={Link} to="/realtors">Our realtors</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to="/jobs">Jobs</NavDropdown.Item>
                         <NavDropdown.Divider/>
-                        <NavDropdown.Item href="#action/3.6">Separated link</NavDropdown.Item>
+                        {/*<NavDropdown.Item href="#action/3.6">Separated link</NavDropdown.Item>*/}
                     </NavDropdown>
                     <Nav.Link as={Link} to="/catalog" className={classes.item}>Catalog</Nav.Link>
                     <NavDropdown title="Services" id="collasible-nav-dropdown" className={classes.item}>
@@ -26,7 +26,7 @@ const Header = (props) => {
                         <NavDropdown.Item as={Link} to="/catalog">Buying apartments</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to="/rent">Apartments for rent</NavDropdown.Item>
                         <NavDropdown.Divider/>
-                        <NavDropdown.Item href="#action/3.6">Separated link</NavDropdown.Item>
+                        {/*<NavDropdown.Item href="#action/3.6">Separated link</NavDropdown.Item>*/}
                     </NavDropdown>
                     <Nav.Link as={Link} to="/contacts" className={classes.item}>Contacts</Nav.Link>
                     <Nav.Link as={Link} to="/reviews">Reviews</Nav.Link>

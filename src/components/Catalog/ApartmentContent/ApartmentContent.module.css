@@ -8,8 +8,114 @@
     /*flex-wrap: wrap;*/
     background-color: #e0e3e5;
 }
-
+.wrapperBlock {
+    margin: 0 120px 0 120px;
+    background-color: silver;
+}
 .wrapHead {
     display: flex;
     justify-content: space-between;
+    color: #555457;
+    margin-top: 10px;
+    padding: 20px 20px 0 20px;
+}
+
+.btnReturnWrap {
+
+}
+
+.btnReturn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+}
+
+.btnReturn {
+    padding: 6px;
+    border: 1px solid teal;
+    color: #261b27;
+}
+
+.WrapHeadLeft {
+    display: flex;
+}
+.itemHeadLeft {
+    margin-left: 40px;
+}
+
+.itemHeadRight {
+    margin-right: 40px;
+}
+.WrapHeadRight {
+    display: flex;
+}
+
+.btnSubmitApp {
+    padding: 6px;
+    border: 1px solid teal;
+    color: white;
+    background-color: teal;
+}
+
+.itemGaleryHead {
+    margin-left: 40px;
+}
+
+.itemGalerySpan span {
+    margin-left: 40px;
+}
+
+.galleryWrapper {
+    display: flex;
+}
+
+.itemWrapLeft {
+    margin: 10px 10px 0 10px;
+    width: 50%;
+}
+
+.itemWrapRight {
+    margin: 10px 10px 0 0;
+    background-color: #dedede;
+    padding: 0 0 15px 15px;
+    width: 50%;
+
+}
+
+.containerHead {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.itemContainer {
+    width: 33.3%;
+}
+
+.itemContainer span {
+    display: block;
+}
+
+.itemRoomDesc {
+    font-size: 0.7em;
+    margin-top: 15px;
+}
+
+.itemRoomDescName {
+    margin-top: 10px;
+}
+
+.containerMenu {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 150px;
+}
+
+.itemContact {
+    margin-left: 20px;
 }

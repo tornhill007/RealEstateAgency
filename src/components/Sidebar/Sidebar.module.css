@@ -8,15 +8,16 @@
 .ico img{
     height: 66px;
     margin-top: 7px;
-    padding: 0 0 3 16px;
+    padding: 0 0 3px 16px;
 }
 
 .menuVertical{
     width: 170px;
     position: fixed;
-    height: 535px;
+    height: 100%;
     background-color: #272727;
     margin-top: 56px;
+    z-index: -1;
 }
 
 .menuVertical ul{
