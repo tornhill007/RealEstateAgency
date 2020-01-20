@@ -119,3 +119,18 @@
 .itemContact {
     margin-left: 20px;
 }
+
+.map {
+    margin-top: 10px;
+}
+
+.location {
+    cursor: pointer;
+}
+
+.equip {
+    margin: 10px 10px 0 0;
+    background-color: #dedede;
+    padding: 0 0 15px 15px;
+    width: 50%;
+}

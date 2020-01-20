@@ -8,7 +8,9 @@ const Reviews = (props) => {
     let newPost = React.createRef();
 
     let onAddPost = () => {
-        props.addPost();
+        let text = newPost.current.value;
+        if(text != '') props.addPost();
+        else(alert("Please, fill the form"))
     }
 
     let onPostChange = () => {

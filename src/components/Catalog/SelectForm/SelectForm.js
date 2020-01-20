@@ -1,7 +1,5 @@
 import React from 'react';
 import classes from "../Catalog.module.css";
-import arrayContent from "../../../common/arrayContent";
-import {setApartmentAC} from "../../../reducers/ApartmentsReducer";
 
 
 class FlavorForm extends React.Component {
@@ -14,24 +12,23 @@ class FlavorForm extends React.Component {
     }
 
     handleChange(event) {
+        const { setSort } = this.props;
         this.setState({value: event.target.value});
+        setSort(event.target.value);
     }
 
-    sortByAge(arr) {
-        arr.sort((a, b) => a.price > b.price ? 1 : -1);
-    }
+    // sortByAge(arr) {
+    //     arr.sort((a, b) => a.price > b.price ? 1 : -1);
+    // }
 
     handleSubmit(event) {
-        alert('Sort by: ' + this.state.value);
-        if(this.state.value === 'byPriceUp') {
-            this.sortByAge(arrayContent);
-            event.preventDefault();
-            console.log(arrayContent);
-            this.props.setApartments( arrayContent
-            )
-        }
-
-
+        // alert('Sort by: ' + this.state.value);
+        // if(this.state.value === 'byPriceUp') {
+        //     this.sortByAge(arrayContent);
+        //     event.preventDefault();
+        //     console.log(arrayContent);
+        //     this.props.setApartments( arrayContent )
+        // }
     }
 
     render() {
@@ -50,9 +47,9 @@ class FlavorForm extends React.Component {
                         <option value="byAreaDown">By area (max - min)</option>
                     </select>
                 </label>
-                <div className={classes.submitWrap}>
-                    <input type="submit" value="Ok" className={classes.submit}/>
-                </div>
+                {/*<div className={classes.submitWrap}>*/}
+                {/*    <input type="submit" value="Ok" className={classes.submit}/>*/}
+                {/*</div>*/}
             </form>
             </div>
 

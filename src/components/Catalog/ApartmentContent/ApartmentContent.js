@@ -6,15 +6,42 @@ import classes from './ApartmentContent.module.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBuilding, faHome, faLock, faTools} from "@fortawesome/free-solid-svg-icons";
 import {MyGallery} from "./Gallery/Gallery";
+import GoogleApiWrapper from "../../Contacts/Map/Map";
 
-
-const ApartmentContent = (props) => {
+export class ApartmentContent extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+// const ApartmentContent = (props) => {
     // if (props.apartmentContent.length === 0) {
     //     props.setContent( arrayContent
     //     )
     // }
+ // const onClickLocation = () => {
+ //
+ // }
 
-    let pathname = props.location.pathname.substr(1).split('/')[1];
+    state = {
+        isMap: 1
+    };
+
+    onRenderMap = () => {
+        const {isMap} = this.state;
+        this.setState({isMap: 2})
+    };
+
+    onRenderMain = () => {
+        this.setState({isMap: 1})
+    }
+
+    onRenderEquip = () => {
+        this.setState({isMap: 3})
+    }
+
+
+render() {
+
+    let pathname = this.props.location.pathname.substr(1).split('/')[1];
     console.log(pathname);
     try {
         var content = arrayContent[pathname - 1];
@@ -22,6 +49,7 @@ const ApartmentContent = (props) => {
         var content = 'ERROR 404';
     }
 
+    const {isMap} = this.state;
 
     return <div className={classes.wrapper}>
         <div className={classes.wrapperBlock}>
@@ -50,15 +78,25 @@ const ApartmentContent = (props) => {
                     </div>
                     <div className={classes.itemGalerySpan}>
                         <span>ID:{content.id}</span>
-                        <span>Main information</span>
-                        <span>Equipment</span>
+                        <span className={classes.location} onClick={this.onRenderMain}>Main information</span>
+                        <span className={classes.location} onClick={this.onRenderEquip}>Equipment</span>
+                        <span className={classes.location} onClick={this.onRenderMap}>Location</span>
                     </div>
                 </div>
                 <div className={classes.galleryWrapper}>
                     <div className={classes.itemWrapLeft}>
                         <MyGallery arrayContent={content.images}/>
                     </div>
-                    <div className={classes.itemWrapRight}>
+
+                    {isMap == 2 && <div className={classes.map}>
+                        <GoogleApiWrapper pathname={pathname}/>
+                    </div>}
+
+                    {isMap == 3 && <div className={classes.equip} dangerouslySetInnerHTML={{__html: content.equipment}}>
+
+                    </div>}
+
+                    {isMap == 1 && <div className={classes.itemWrapRight}>
                         <div className={classes.containerHead}>
                             <div className={classes.itemContainer}>
                                 <span>
@@ -121,7 +159,7 @@ const ApartmentContent = (props) => {
                                 </div>
                                 <div className={classes.itemRoomDesc}>
                                     <div>
-                                    <FontAwesomeIcon icon={faBuilding} size='2x' className={classes.icon}/>
+                                        <FontAwesomeIcon icon={faBuilding} size='2x' className={classes.icon}/>
                                     </div>
                                     <span>
                                 {content.floor} floor from {content.floorMax}
@@ -166,11 +204,13 @@ const ApartmentContent = (props) => {
                                 <span className={classes.itemContact}>Admin</span>
                             </div>
                         </div>
-                    </div>
+                    </div>}
+
+
                 </div>
             </div>
         </div>
     </div>
 };
-
-export default ApartmentContent;
+}
+// export default ApartmentContent;

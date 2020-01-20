@@ -1,10 +1,14 @@
 import React from 'react';
 import classes from './Map.module.css';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-import arrayContent from "../../../common/arrayContent";
+import arrayContent, {currentAgency} from "../../../common/arrayContent";
 import {NavLink} from "react-router-dom";
 
 export class MapContainer extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
     state = {
         showingInfoWindow: false,
         activeMarker: {},
@@ -28,17 +32,24 @@ export class MapContainer extends React.Component {
             })
         }
     };
+
+
     render() {
-
+        // let pathname = props.location.pathname.substr(1).split('/')[1];
+        console.log(this.props.pathname);
         return (
-            <Map google={this.props.google} zoom={14} style={{width: '52.45%'}} >
+            <Map google={this.props.google} zoom={14} style={!this.props.pathname ? {width: '52.45%'} : {width: '32.55%', height: '66%'} } >
 
 
-                {arrayContent.map(u => <Marker onClick={this.onMarkerClick} title={u.desc} key={u.id} name={u.location} position={{lat: u.marker[0], lng: u.marker[1] }} className={classes.wrapperBlock} />)}
-                {/*<Marker onClick={this.onMarkerClick}*/}
-                {/*    title={'The marker`s title will appear as a tooltip.'}*/}
-                {/*    name={'KEK'}*/}
-                {/*    position={{lat: arrayContent[0].marker[0], lng: arrayContent[0].marker[1]}} />*/}
+                {/*{arrayContent.map(u => <Marker onClick={this.onMarkerClick} title={u.desc} key={u.id} name={u.location} position={{lat: u.marker[0], lng: u.marker[1] }} className={classes.wrapperBlock} />)}*/}
+                {this.props.pathname ? <Marker onClick={this.onMarkerClick}
+                                               title={arrayContent[this.props.pathname - 1].desc}
+                                               name={arrayContent[this.props.pathname -1 ].location}
+                                               position={{lat: arrayContent[this.props.pathname - 1].marker[0], lng: arrayContent[this.props.pathname - 1].marker[1]}} />
+                : <Marker onClick={this.onMarkerClick}
+                          title={currentAgency[0].desc}
+                          name={currentAgency[0].location}
+                          position={{lat: currentAgency[0].marker[0], lng: currentAgency[0].marker[1]}} />}
 
                 <InfoWindow
                     marker={this.state.activeMarker}

@@ -1,13 +1,11 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import classes from './Catalog.module.css';
-import {required} from "../../utils/validator";
-import {Input} from "../../common/FormsControl/FormsControl";
-import {Field, reduxForm} from "redux-form";
-import SelectForm from "./SelectForm/SelectForm";
+import { reduxForm } from "redux-form";
+import SelectForm from "./SelectForm/SelectFormContainer";
 import ApartmentsContainer from "./Apartments/ApartmentsContainer";
 import PriceForm from "./SelectForm/PriceForm";
-import RoomsForm from "./SelectForm/RoomsForm";
+import RoomsForm from "./SelectForm/RoomsFormContainer";
 import AreaForm from "./SelectForm/AreaForm";
 import DistrictForm from "./SelectForm/DistrictForm";
 import ComplexForm from "./SelectForm/ComplexForm";
@@ -15,19 +13,25 @@ import BuildingForm from "./SelectForm/BuildingForm";
 import RepairForm from "./SelectForm/RepairForm";
 
 
-const PriceReduxForm = reduxForm({form: 'price'})(PriceForm)
-const RoomsReduxForm = reduxForm({form: 'room'})(RoomsForm)
-const AreaReduxForm = reduxForm({form: 'area'})(AreaForm)
-const DistrictReduxForm = reduxForm({form: 'district'})(DistrictForm)
-const ComplexReduxForm = reduxForm({form: 'complex'})(ComplexForm)
-const BuildingReduxForm = reduxForm({form: 'building'})(BuildingForm)
-const RepairReduxForm = reduxForm({form: 'repair'})(RepairForm)
+const PriceReduxForm = reduxForm({form: 'price'})(PriceForm);
+const RoomsReduxForm = reduxForm({form: 'room'})(RoomsForm);
+const AreaReduxForm = reduxForm({form: 'area'})(AreaForm);
+const DistrictReduxForm = reduxForm({form: 'district'})(DistrictForm);
+const ComplexReduxForm = reduxForm({form: 'complex'})(ComplexForm);
+const BuildingReduxForm = reduxForm({form: 'building'})(BuildingForm);
+const RepairReduxForm = reduxForm({form: 'repair'})(RepairForm);
 
 const Catalog = (props) => {
     const onSubmit = (formData) => {
-
+        const { setFilterRooms } = props;
+        let filters = [];
+        for (let item in formData) {
+            if(formData[item] === true)
+                filters.push(item);
+        }
+        setFilterRooms(filters);
         console.log(formData);
-    }
+    };
 
     return <div>
         <h1 className={classes.head}>Catalog Filter</h1>

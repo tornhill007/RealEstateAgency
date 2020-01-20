@@ -1,20 +1,12 @@
 import React from 'react';
-import {Provider} from 'react-redux'
 import {
-    BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
-import MainContainer from './containers/MainContainer'
-import configureStore from './utils/store';
-import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Contacts from "./components/Contacts/Contacts";
-import Catalog from "./components/Catalog/Catalog";
-import BreadScrumbs from "./components/Navbar/BreadScrumbs";
+import Catalog from "./components/Catalog/CatalogContainer";
 import About from "./components/About/About";
-import Reviews from "./components/Reviews/Reviews";
 import './common/style/app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from "./components/Main/Main";

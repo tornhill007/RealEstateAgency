@@ -4,7 +4,7 @@ const initState = {
     realtors: [],
     pageSize: 5,
     totalRealtorsCount: 20,
-    currentPage: 1
+    currentPage: 2
 };
 
 export default (state = initState, action) => {

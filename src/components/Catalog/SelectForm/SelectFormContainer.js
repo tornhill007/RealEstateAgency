@@ -1,10 +1,7 @@
-import React from 'react';
 import {connect} from "react-redux";
-import {setCurrentPageAC, setRealtorsAC} from "../../../reducers/RealtorsReducer";
 
 import SelectForm from "../SelectForm/SelectForm";
-import {setApartmentAC} from "../../../reducers/ApartmentsReducer";
-import Apartments from "./Apartments";
+import { setApartmentAC, setSort } from "../../../reducers/ApartmentsReducer";
 
 let mapStateToProps = (state) => {
     return {
@@ -17,9 +14,9 @@ let mapDispatchToProps = (dispatch) => {
         setApartments: (apartments) => {
             dispatch(setApartmentAC(apartments));
         },
-        // setCurrentPage: (pageNumber) => {
-        //     dispatch(setCurrentPageAC(pageNumber))
-        // }
+        setSort: (sort) => {
+             dispatch(setSort(sort))
+        }
     }
 };
 

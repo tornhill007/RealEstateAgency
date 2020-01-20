@@ -14,4 +14,4 @@ export default (state = initState, action) => {
     }
 }
 
-export const setContentAC = (apartmentContent) => ({type: SET_CONTENT, apartmentContent})
+export const setContentAC = (apartmentContent) => ({type: SET_CONTENT, apartmentContent});

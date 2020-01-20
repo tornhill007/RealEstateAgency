@@ -1,9 +1,7 @@
 import React from 'react';
-import {connect} from "react-redux";
-import {setCurrentPageAC, setRealtorsAC} from "../../../reducers/RealtorsReducer";
+import { connect } from "react-redux";
 
-import SelectForm from "../SelectForm/SelectForm";
-import {setApartmentAC} from "../../../reducers/ApartmentsReducer";
+import { setApartmentAC } from "../../../reducers/ApartmentsReducer";
 import Apartments from "./Apartments";
 
 let mapStateToProps = (state) => {
@@ -11,7 +9,9 @@ let mapStateToProps = (state) => {
         apartments: state.apartmentsPage.apartments,
         pageSize: state.realtorsPage.pageSize,
         totalRealtorsCount: state.realtorsPage.totalRealtorsCount,
-        currentPage: state.realtorsPage.currentPage
+        currentPage: state.realtorsPage.currentPage,
+        sort: state.apartmentsPage.sort,
+        filterRooms: state.filterPage.rooms
     }
 };
 

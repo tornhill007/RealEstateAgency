@@ -4,7 +4,7 @@ import {setCurrentPageAC, setRealtorsAC} from "../../../reducers/RealtorsReducer
 
 import SelectForm from "../SelectForm/SelectForm";
 import {setApartmentAC} from "../../../reducers/ApartmentsReducer";
-import ApartmentContent from "./ApartmentContent";
+import {ApartmentContent} from "./ApartmentContent";
 import {setContentAC} from "../../../reducers/ApartmentContentReducer";
 
 let mapStateToProps = (state) => {
