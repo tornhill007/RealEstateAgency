@@ -3,3 +3,5 @@ export const SET_REALTORS = 'SET_REALTORS';
 export const SET_APARTMENTS = 'SET_APARTMENTS';
 export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 export const SET_CONTENT = 'SET_CONTENT';
+export const ADD_NEW_POST = 'ADD_NEW_POST';
+export const UPDATE_TEXT_NEW_POST = 'UPDATE_TEXT_NEW_POST';

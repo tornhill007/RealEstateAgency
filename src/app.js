@@ -1,5 +1,5 @@
 import React from 'react';
-import { Provider } from 'react-redux'
+import {Provider} from 'react-redux'
 import {
     BrowserRouter as Router,
     Switch,
@@ -29,60 +29,59 @@ import Jobs from "./components/About/Jobs/Jobs";
 import JobsPosition from "./components/About/Jobs/JobsPosition";
 import RealtorsContainer from "./components/About/Realtors/RealtorsContainer";
 import ApartmentContentContainer from "./components/Catalog/ApartmentContent/ApartmentContentContainer";
+import ReviewsContainer from "./components/Reviews/ReviewsContainer";
 
 
 function App() {
-  return (
-      <div>
-          <HeaderContainer/>
-          {/*<BreadScrumbs/>*/}
-          <Sidebar/>
-            <div>
-                <Switch>
-                    {/*<Route exact path="/home">*/}
-                    {/*    <MainContainer/>*/}
-                    {/*</Route>*/}
-                    <Route path="/main">
-                        <Main/>
-                    </Route>
-                    <Route path="/about">
-                        <About/>
-                    </Route>
-                    <Route path="/catalog/:id" component={ApartmentContentContainer}/>
+    return (
+        <div>
+            <HeaderContainer/>
+            {/*<BreadScrumbs/>*/}
+            <Sidebar/>
+            <Switch>
+                {/*<Route exact path="/home">*/}
+                {/*    <MainContainer/>*/}
+                {/*</Route>*/}
+                <Route path="/main">
+                    <Main/>
+                </Route>
+                <Route path="/about">
+                    <About/>
+                </Route>
+                <Route path="/catalog/:id" component={ApartmentContentContainer}/>
 
-                    <Route path="/catalog" component={Catalog}/>
+                <Route path="/catalog" component={Catalog}/>
 
-                    <Route path="/contacts">
-                        <Contacts/>
-                    </Route>
-                    <Route path="/reviews">
-                        <Reviews/>
-                    </Route>
-                    <Route path="/selling">
-                        <Selling/>
-                    </Route>
-                    <Route path="/login">
-                        <Login/>
-                    </Route>
-                    <Route path="/register">
-                        <Register/>
-                    </Route>
-                    <Route path="/mission">
-                        <Missions/>
-                    </Route>
-                    <Route path="/goals">
-                        <Goals/>
-                    </Route>
-                    <Route path="/jobs/:id" component={JobsPosition} />
-                    <Route path="/jobs" component={Jobs} />
-                    <Route path="/realtors">
-                        <RealtorsContainer/>
-                    </Route>
-                </Switch>
-            </div>
-          <Footer/>
-      </div>
-  );
+                <Route path="/contacts">
+                    <Contacts/>
+                </Route>
+                <Route path="/reviews">
+                    <ReviewsContainer/>
+                </Route>
+                <Route path="/selling">
+                    <Selling/>
+                </Route>
+                <Route path="/login">
+                    <Login/>
+                </Route>
+                <Route path="/register">
+                    <Register/>
+                </Route>
+                <Route path="/mission">
+                    <Missions/>
+                </Route>
+                <Route path="/goals">
+                    <Goals/>
+                </Route>
+                <Route path="/jobs/:id" component={JobsPosition}/>
+                <Route path="/jobs" component={Jobs}/>
+                <Route path="/realtors">
+                    <RealtorsContainer/>
+                </Route>
+            </Switch>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

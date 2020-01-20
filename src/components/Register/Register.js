@@ -14,7 +14,7 @@ const RegisterForm = (props) => {
     return (
 
         <div className={classes.container}>
-            <img src="/men.png" alt="men"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxd34nv00X_fav1iySEezHQCEqRgYDM16tyCM96R2am7AxHknV&s" alt="men"/>
             <form onSubmit={props.handleSubmit}>
                 <div className={classes.wrapperInput}>
 
@@ -72,11 +72,26 @@ const Register = (props) => {
     const onSubmit = (formData) => {
         // props.login(formData.email, formData.password, formData.rememberMe)
         console.log(formData);
+        if(localStorage.getItem ("usersArray") != null) {
+           var usersArray = JSON.parse (localStorage.getItem ("usersArray"));
+        }
+        else {
+            var usersArray = [];
+        }
+        let userRepat = usersArray.find(item => item.email == formData.email);
+            if(!userRepat) {
+            usersArray.push(formData);
+            localStorage.setItem("usersArray", JSON.stringify(usersArray));
+        }
+            else alert("Such user is already exists")
+
     }
 
-    return <div>
-        <h1 className={classes.name}>Register</h1>
+    return <div className={classes.wrapperLogin}>
+        <div className={classes.wrapperPage1}>
+            <h1 className={classes.name}>Register</h1>
         <RegisterReduxForm onSubmit={onSubmit}/>
+    </div>
     </div>
 };
 

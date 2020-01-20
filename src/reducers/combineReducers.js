@@ -6,6 +6,7 @@ import authReducer from "./authReducer";
 import RealtorsReducer from "./RealtorsReducer";
 import ApartmentsReducer from "./ApartmentsReducer";
 import ApartmentContentReducer from "./ApartmentContentReducer";
+import profileReducer from "./profileReducer";
 
 export default combineReducers({
 
@@ -15,5 +16,6 @@ export default combineReducers({
     realtorsPage: RealtorsReducer,
     apartmentsPage: ApartmentsReducer,
     contentPage: ApartmentContentReducer,
+    profilePage: profileReducer
 
 });

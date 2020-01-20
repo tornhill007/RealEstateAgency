@@ -65,7 +65,7 @@ const Realtors = (props) => {
                 {
                     id: 7,
                     photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
-                    fullName: "Maks Surname",
+                    fullName: "Sir Alex",
                     position: "real estate consultant",
                     region: "some region",
                     phoneNumber: "+380 (50) 424 57 23",
@@ -490,7 +490,7 @@ const Realtors = (props) => {
                 {
                     id: 7,
                     photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
-                    fullName: "Maks Surname",
+                    fullName: "Sir Alex",
                     position: "real estate consultant",
                     region: "some region",
                     phoneNumber: "+380 (50) 424 57 23",

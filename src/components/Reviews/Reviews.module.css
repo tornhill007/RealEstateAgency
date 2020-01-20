@@ -1,3 +1,28 @@
+
+
 .item {
-    background-color: chocolate;
+    background-color: white;
+    padding-top: 80px;
+    margin-left: 170px;
+    font-family: cursive;
+}
+.btnWrap {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    padding: 5px 15px 5px 15px;
+}
+
+.input {
+    font-size: 0.8em;
+    background:transparent;
+    border: 1px solid black;
+}
+
+.itemWrap {
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+
 }

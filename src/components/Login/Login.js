@@ -52,12 +52,20 @@ const LoginForm = (props) => {
 const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
 const Login = (props) => {
     const onSubmit = (formData) => {
-        props.login(formData.email, formData.password, formData.rememberMe)
-    }
+        if(localStorage.getItem ("usersArray") != null) {
+            var usersArray = JSON.parse (localStorage.getItem ("usersArray"));
+        }
+        else {
+            var usersArray = [];
+        }
+        let user = usersArray.filter(item => item.email == formData.email && item.password == formData.password).pop();
+       // localStorage.setItem("usersArray", JSON.stringify(usersArray));
+        console.log(user);
+        if(user == undefined) {
+            alert('Email of password is not correctly')
+        }
+    };
 
-    if (props.isAuth) {
-        return <Redirect to={"/home"}/>
-    }
     return <div className={classes.wrapperLogin}>
         <div className={classes.wrapperPage1}>
         <h1 className={classes.name}>Login</h1>
@@ -67,9 +75,7 @@ const Login = (props) => {
     </div>
 };
 
-const mapStateToProps = (state) => ({
-    isAuth: state.auth.isAuth
-})
+
 
 export default Login;
 // export default connect(mapStateToProps, {login} )(Login);

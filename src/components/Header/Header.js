@@ -21,10 +21,10 @@ const Header = (props) => {
                     <Nav.Link as={Link} to="/catalog" className={classes.item}>Catalog</Nav.Link>
                     <NavDropdown title="Services" id="collasible-nav-dropdown" className={classes.item}>
                         <NavDropdown.Item as={Link} to="/selling">To the owners</NavDropdown.Item>
-                        <NavDropdown.Item as={Link} to="/evaluation">Real estate appraisal</NavDropdown.Item>
-                        <NavDropdown.Item as={Link} to="/advertising">Advertising</NavDropdown.Item>
+                        {/*<NavDropdown.Item as={Link} to="/evaluation">Real estate appraisal</NavDropdown.Item>*/}
+                        {/*<NavDropdown.Item as={Link} to="/advertising">Advertising</NavDropdown.Item>*/}
                         <NavDropdown.Item as={Link} to="/catalog">Buying apartments</NavDropdown.Item>
-                        <NavDropdown.Item as={Link} to="/rent">Apartments for rent</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/catalog">Apartments for rent</NavDropdown.Item>
                         <NavDropdown.Divider/>
                         {/*<NavDropdown.Item href="#action/3.6">Separated link</NavDropdown.Item>*/}
                     </NavDropdown>

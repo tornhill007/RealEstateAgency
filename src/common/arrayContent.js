@@ -8,7 +8,7 @@ let arrayContent = [
         location: "Schorsa street 34",
         complex: "Avalon 5",
         district: "Leninsky district",
-        price: "1000",
+        price: 1000,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -22,6 +22,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2281173, 28.4412246],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -61,9 +62,9 @@ let arrayContent = [
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
         location: "Schorsa street 34",
-        complex: "Avalon 5",
+        complex: "Cosmonauts 24",
         district: "Leninsky district",
-        price: "1000",
+        price: 800,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -77,6 +78,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2310356, 28.4238439],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -115,10 +117,10 @@ let arrayContent = [
         advertName: "Rent Apartments Vinnytsia Zhilyanskaya 59 in Avalon 5",
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
-        location: "Schorsa street 34",
+        location: "Youth 10",
         complex: "Avalon 5",
         district: "Leninsky district",
-        price: "1000",
+        price: 800,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -132,6 +134,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2285318, 28.4248765],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -170,7 +173,7 @@ let arrayContent = [
         advertName: "Rent Apartments Vinnytsia Zhilyanskaya 59 in Avalon 5",
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
-        location: "Schorsa street 34",
+        location: "Soborna 10",
         complex: "Avalon 5",
         district: "Leninsky district",
         price: "1000",
@@ -187,6 +190,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2371708, 28.4735345],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -225,10 +229,10 @@ let arrayContent = [
         advertName: "Rent Apartments Vinnytsia Zhilyanskaya 59 in Avalon 5",
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
-        location: "Schorsa street 34",
+        location: "Soborna 7",
         complex: "Avalon 5",
         district: "Leninsky district",
-        price: "1000",
+        price: 1400,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -242,6 +246,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2278633, 28.4987658,],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -280,10 +285,10 @@ let arrayContent = [
         advertName: "Rent Apartments Vinnytsia Zhilyanskaya 59 in Avalon 5",
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
-        location: "Schorsa street 34",
+        location: "Academician Yangel Street 5",
         complex: "Avalon 5",
         district: "Leninsky district",
-        price: "1000",
+        price: 1500,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -297,6 +302,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2441924, 28.4891852],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -335,10 +341,10 @@ let arrayContent = [
         advertName: "Rent Apartments Vinnytsia Zhilyanskaya 59 in Avalon 5",
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
-        location: "Schorsa street 34",
+        location: "Zamostyanskaya street",
         complex: "Avalon 5",
         district: "Leninsky district",
-        price: "1000",
+        price: 900,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -352,6 +358,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2281072, 28.4553883],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -393,7 +400,7 @@ let arrayContent = [
         location: "Schorsa street 34",
         complex: "Avalon 5",
         district: "Leninsky district",
-        price: "1000",
+        price: 1000,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -407,6 +414,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2160622, 28.4409703],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -445,10 +453,10 @@ let arrayContent = [
         advertName: "Rent Apartments Vinnytsia Zhilyanskaya 59 in Avalon 5",
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
-        location: "Schorsa street 34",
+        location: "Zodchikh street 10",
         complex: "Avalon 5",
         district: "Leninsky district",
-        price: "1000",
+        price: 1000,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -462,6 +470,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2220322, 28.4480855],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -502,8 +511,8 @@ let arrayContent = [
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
         location: "Schorsa street 34",
         complex: "Avalon 5",
-        district: "Leninsky district",
-        price: "1000",
+        district: "Pirogova street 50",
+        price: 1070,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -517,6 +526,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2287179, 28.442583],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -555,10 +565,10 @@ let arrayContent = [
         advertName: "Rent Apartments Vinnytsia Zhilyanskaya 59 in Avalon 5",
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
-        location: "Schorsa street 34",
+        location: "Khmelnitsky highway 89",
         complex: "Avalon 5",
         district: "Leninsky district",
-        price: "1000",
+        price: 1340,
         priceMetr: "18",
         roomNumber: "one-room",
         roomAmount: "1",
@@ -572,6 +582,7 @@ let arrayContent = [
         elevator: "with elevator",
         layout: "Studio",
         repair: "1-2 years",
+        marker: [49.2338066, 28.4214356],
         images: [
             {
                 original: 'https://image.blagovist.ua/285909404/full',
@@ -603,6 +614,225 @@ let arrayContent = [
             }
         ],
         isRent: true
+    },
+];
+
+export let realtorsContent = [
+    {
+        id: 1,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (97) 998 64 55",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 2,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 3,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 4,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 5,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 6,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Andrew Komar",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 7,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Sir Alex",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 8,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 9,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 10,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 11,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 12,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 13,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Dima Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 14,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 15,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 16,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 17,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 18,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 19,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Maria Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 20,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 21,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 22,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 23,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
+    },
+    {
+        id: 24,
+        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        fullName: "Name Surname",
+        position: "real estate consultant",
+        region: "some region",
+        phoneNumber: "+380 (50) 424 57 23",
+        email: "Xxxxxxxxxx.Xx@gmail.com"
     }
 ]
 

@@ -3,6 +3,7 @@ import {MapContainer} from "./Map/Map";
 import classes from './Contacts.module.css';
 import {Link, NavLink} from "react-router-dom";
 import {Nav} from "react-bootstrap";
+import  GoogleApiWrapper from "./Map/Map.js"
 
 const Contacts = () => {
     return (
@@ -72,7 +73,7 @@ const Contacts = () => {
                     </div>
                 </div>
                 <div className={classes.itemRight}>
-                    <MapContainer />
+                    <GoogleApiWrapper/>
                 </div>
             </div>
         </div>

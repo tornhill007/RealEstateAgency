@@ -1,5 +1,7 @@
 import React from 'react';
 import classes from "../Catalog.module.css";
+import arrayContent from "../../../common/arrayContent";
+import {setApartmentAC} from "../../../reducers/ApartmentsReducer";
 
 
 class FlavorForm extends React.Component {
@@ -15,9 +17,21 @@ class FlavorForm extends React.Component {
         this.setState({value: event.target.value});
     }
 
+    sortByAge(arr) {
+        arr.sort((a, b) => a.price > b.price ? 1 : -1);
+    }
+
     handleSubmit(event) {
         alert('Sort by: ' + this.state.value);
-        event.preventDefault();
+        if(this.state.value === 'byPriceUp') {
+            this.sortByAge(arrayContent);
+            event.preventDefault();
+            console.log(arrayContent);
+            this.props.setApartments( arrayContent
+            )
+        }
+
+
     }
 
     render() {

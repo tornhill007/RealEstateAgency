@@ -1,0 +1,26 @@
+.itemImg{
+    width: 70%;
+}
+
+.item {
+    background-color: teal;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.itemWrapper {
+    display: flex;
+
+}
+
+.itemLeft {
+    width: 10%;
+}
+
+.itemRight {
+    word-wrap: break-word;
+    width: 90%;
+    font-size: 0.9em;
+}

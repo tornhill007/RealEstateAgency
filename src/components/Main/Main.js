@@ -20,6 +20,7 @@ function Main() {
     const classItem = `${classes.item} d-block w-100`;
 
     return (
+        <div className={classes.wrapperBlock}>
         <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} className={classes.wrapper}>
             <Carousel.Item>
                 <img
@@ -63,6 +64,7 @@ function Main() {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        </div>
     );
     // return (
     //     <div>

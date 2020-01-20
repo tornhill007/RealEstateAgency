@@ -40,6 +40,7 @@
 .wrapperBlock {
     display: flex;
     justify-content: center;
+
 }
 
 .itemLeft {
@@ -68,6 +69,8 @@
 .wrapContent {
     padding: 30px;
     background-color: teal;
+    position: sticky;
+    top: 0;
 }
 
 .itemFormWrap {
@@ -94,3 +97,4 @@
 .itemFormWrap {
     padding: 15px 0 15px 0;
 }
+

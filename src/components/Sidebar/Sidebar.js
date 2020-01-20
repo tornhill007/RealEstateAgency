@@ -6,30 +6,30 @@ const Sidebar = () => {
     return (
             <nav className={classes.menuVertical}>
                 <ul>
-                    <li><a href="#1">
+                    <li><NavLink to='/home'>
                         <div className={classes.img_n}><img src="earth.png"/></div>
-                        <span>About site</span></a></li>
+                        <span>About site</span></NavLink></li>
 
-                    <li><a href="#2">
+                    <li><NavLink to='/home'>
                         <div className={classes.img_n}><img src="stat.png"/></div>
-                        <span>+ Buying</span></a>
+                        <span>+ Buying</span></NavLink>
                         <ul>
-                            <li><a href="#2-1">Apartment</a></li>
-                            <li><a href="#2-2">House</a></li>
-                            <li><a href="#2-2">Premise</a></li>
+                            <li><NavLink to='/home'>Apartment</NavLink></li>
+                            <li><NavLink to='/home'>House</NavLink></li>
+                            <li><NavLink to='/home'>Premise</NavLink></li>
                         </ul>
                     </li>
 
-                    <li><a href="#3">
+                    <li><NavLink to='/home'>
                         <div className={classes.img_n}><img src="prof.png"/></div>
-                        <span>+ Rent</span></a>
+                        <span>+ Rent</span></NavLink>
                         <ul>
-                            <li><a href="#3-1">Daily rent</a></li>
-                            <li><a href="#3-2">Long term rental</a></li>
+                            <li><NavLink to='/home'>Daily rent</NavLink></li>
+                            <li><NavLink to='/home'>Long term rental</NavLink></li>
                         </ul>
                     </li>
 
-                    <li><NavLink to="/register">
+                    <li><NavLink to='/register'>
                         <div className={classes.img_n}><img src="zak.png"/></div>
                         <span>Registration</span></NavLink></li>
                 </ul>

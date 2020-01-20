@@ -9,7 +9,7 @@ export const Input = ({input, meta, ...props}) => {
             <div>
                 <input{...input} {...props}/>
             </div>
-            {meta.touched && meta.error && <span>"Some Error"</span> }
+            {meta.touched && meta.error && <span>"Fill the form"</span> }
         </div>
     )
 }
