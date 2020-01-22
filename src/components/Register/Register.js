@@ -78,12 +78,19 @@ const Register = (props) => {
         else {
             var usersArray = [];
         }
-        let userRepat = usersArray.find(item => item.email == formData.email);
+        let userRepat = usersArray.find(item => item.email[0] == formData.email);
+        let emailValid = formData.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+        // console.log(formData.email = emailValid ? '' : 'is invalid')
+        if(formData.email = emailValid) {
             if(!userRepat) {
-            usersArray.push(formData);
-            localStorage.setItem("usersArray", JSON.stringify(usersArray));
-        }
+                usersArray.push(formData);
+                localStorage.setItem("usersArray", JSON.stringify(usersArray));
+            }
             else alert("Such user is already exists")
+        }
+        else alert('email is invalid');
+
+
 
     }
 

@@ -10,3 +10,76 @@
 .wrapMap {
     width: 50%;
 }
+
+.containerMap {
+     width: 42%!important;
+ }
+@media only screen and (max-width: 1920px) {
+    .containerMap {
+        width: 43.8%!important;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .containerMap {
+        width: 42%!important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .containerMap {
+        width: 66.5%!important;
+        height: 60%!important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .containerMap {
+        width: 62.5%!important;
+
+    }
+    .containerMap {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    /*.containerMap {*/
+    /*    width: 62.5%!important;*/
+    /*}*/
+    /*.containerMap {*/
+    /*    margin-bottom: 60px;*/
+    /*}*/
+    .containerMap {
+        width: 66.5% !important;
+        margin-bottom: 30px;
+    }
+
+}
+    @media only screen and (max-width: 375px) {
+    /*.containerMap {*/
+    /*    width: 62.5%!important;*/
+
+    /*}*/
+    /*.containerMap {*/
+    /*    margin-bottom: 60px;*/
+    /*}*/
+    .containerMap {
+        width: 65%!important;
+        margin-bottom: 27px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /*.containerMap {*/
+    /*    width: 62.5%!important;*/
+
+    /*}*/
+    /*.containerMap {*/
+    /*    margin-bottom: 60px;*/
+    /*}*/
+    .containerMap {
+        width: 70.5%!important;
+        margin-bottom: 38px;
+    }
+}

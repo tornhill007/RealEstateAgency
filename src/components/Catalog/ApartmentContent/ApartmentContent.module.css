@@ -7,6 +7,7 @@
     /*justify-content: center;*/
     /*flex-wrap: wrap;*/
     background-color: #e0e3e5;
+    padding-bottom: 180px;
 }
 .wrapperBlock {
     margin: 0 120px 0 120px;
@@ -133,4 +134,88 @@
     background-color: #dedede;
     padding: 0 0 15px 15px;
     width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .galleryWrapper {
+        flex-direction: column;
+    }
+    .itemWrapLeft {
+        width: 100%;
+    }
+    .itemWrapRight {
+        width: 100%;
+    }
+    .equip {
+        width: 100%;
+    }
+    .wrapperBlock {
+        margin: 0 120px 0 120px;
+    }
+    .itemWrapLeft {
+        margin: 0;
+    }
+    .btnReturnWrap {
+        width: 100%;
+    }
+    .WrapHeadLeft {
+        width: 50%;
+    }
+    .itemHeadRight {
+        font-size: 0.8em;
+    }
+    .itemHeadLeft {
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+    .btnReturnWrap {
+        font-size: 0.8em;
+        margin-top: 10px;
+    }
+    .btnSubmitApp {
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .wrapperBlock {
+        margin: 0 80px 0 80px;
+    }
+    .wrapHead {
+        font-size: 0.65em;
+    }
+    .wrapHeadSpan {
+        display: flex;
+        flex-direction: column;
+    }
+    .itemGalerySpan {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .wrapper {
+            margin-left: 70px;
+    }
+    .wrapperBlock {
+        margin: 0 20px 0 20px;
+    }
+    .itemGaleryHead {
+        margin-left: 0;
+    }
+    .WrapHeadLeft {
+        display: flex;
+        flex-direction: column;
+
+     }
+    .WrapHeadRight {
+        display: flex;
+        flex-direction: column;
+    }
+    .itemHeadLeft {
+        margin-top: 15px;
+    }
+    .WrapHeadRightSpan {
+        margin-top: 15px;
+    }
 }

@@ -11,7 +11,7 @@ let mapStateToProps = (state) => {
         totalRealtorsCount: state.realtorsPage.totalRealtorsCount,
         currentPage: state.realtorsPage.currentPage,
         sort: state.apartmentsPage.sort,
-        filterRooms: state.filterPage.rooms
+        filterRooms: state.filterPage.rooms,
     }
 };
 

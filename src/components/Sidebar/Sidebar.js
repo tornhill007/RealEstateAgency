@@ -10,9 +10,9 @@ const Sidebar = () => {
                         <div className={classes.img_n}><img src="earth.png"/></div>
                         <span>About site</span></NavLink></li>
 
-                    <li><NavLink to='/home'>
+                    <li className={classes.listItem}>
                         <div className={classes.img_n}><img src="stat.png"/></div>
-                        <span>+ Buying</span></NavLink>
+                        <span>+ Buying</span>
                         <ul>
                             <li><NavLink to='/home'>Apartment</NavLink></li>
                             <li><NavLink to='/home'>House</NavLink></li>
@@ -20,16 +20,16 @@ const Sidebar = () => {
                         </ul>
                     </li>
 
-                    <li><NavLink to='/home'>
+                    <li className={classes.listItem}>
                         <div className={classes.img_n}><img src="prof.png"/></div>
-                        <span>+ Rent</span></NavLink>
+                        <span>+ Rent</span>
                         <ul>
                             <li><NavLink to='/home'>Daily rent</NavLink></li>
                             <li><NavLink to='/home'>Long term rental</NavLink></li>
                         </ul>
                     </li>
 
-                    <li><NavLink to='/register'>
+                    <li><NavLink to='/register' className={classes.link}>
                         <div className={classes.img_n}><img src="zak.png"/></div>
                         <span>Registration</span></NavLink></li>
                 </ul>

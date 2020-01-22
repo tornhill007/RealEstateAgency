@@ -1,6 +1,7 @@
 .wrapper {
     padding-top: 90px;
     margin-left: 170px;
+    margin-bottom: 80px;
     font-family: cursive;
     /*background-color: black;*/
     /*display: flex;*/
@@ -21,7 +22,7 @@
     text-align: center;
     padding: 10px;
     color: #555457;
-
+    width: 50%;
 }
 
 .itemLink:hover {
@@ -98,3 +99,40 @@
     padding: 15px 0 15px 0;
 }
 
+@media only screen and (max-width: 1024px) {
+    .wrapperBlock {
+        flex-direction: column;
+   }
+   .itemLeft {
+       width: 100%;
+       padding-right: 0;
+   }
+    .itemRight {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        margin-bottom: 150px;
+    }
+
+}
+@media only screen and (max-width: 414px) {
+    .select {
+       width: 100%;
+    }
+    .wrapper {
+        margin-left: 70px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .itemRight {
+        width: 110%;
+    }
+    .itemLeft {
+        width: 110%;
+    }
+}

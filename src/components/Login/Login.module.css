@@ -95,3 +95,46 @@ width: 100%;
     text-align: center;
     color: black;
 }
+
+@media only screen and (max-width: 1340px) {
+    .wrapperLogin {
+        padding-top: 160px;
+        margin-left: 150px;
+        height: 1300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapperLogin {
+        padding-top: 50px;
+        margin-left: 150px;
+        height: 1000px;
+    }
+    .wrapperPage1 {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .wrapperPage1 {
+        margin-left: 100px;
+    //margin-right: 100px;
+    }
+    .container {
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 320px) {
+
+    .wrapperPage1 {
+        padding-left: 60px;
+    }
+
+}
+
+@media screen and (max-width: 530px){
+    .wrapperPage1 {
+        padding-left: 0;
+    }
+}

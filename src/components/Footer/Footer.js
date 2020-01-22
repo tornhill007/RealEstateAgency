@@ -9,7 +9,7 @@ const Footer = () => {
                 <div>
                     <span>SkyAgency</span>
                 </div>
-                <div>
+                <div className={classes.textLeft}>
 
                     <span>Long-term rental and sale of luxury apartments in Vinnytsia 2012 © Real estate agency “Sky Agency"</span>
                 </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={classes.item}>
-                <span>The site is developed by</span>
+                <span>The site is developed by </span>
                 <span>Andrew Komar</span>
             </div>
         </div>

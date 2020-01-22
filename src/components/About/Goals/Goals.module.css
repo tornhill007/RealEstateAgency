@@ -34,3 +34,16 @@
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        /*margin-left: 60px;*/
+        padding-bottom: 200px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .wrapper {
+        margin-left: 60px;
+    }
+}

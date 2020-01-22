@@ -36,6 +36,7 @@
 .wrapperContacts {
     background-color: black;
     padding-top: 56px;
+    padding-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -80,3 +81,22 @@
     width: 8%;
     margin-right: 10px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .itemLeft {
+        width: 100%;
+    }
+    .itemRight {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 414px) {
+   .wrapperContacts {
+       margin-left: 70px;
+   }
+}
+

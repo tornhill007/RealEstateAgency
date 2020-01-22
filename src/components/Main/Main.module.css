@@ -8,10 +8,44 @@
 .wrapper {
 
     height: auto;
-    margin: 55px 0px 0 170px;
+    margin: 55px 0px 83px 170px;
     width: 87.4%;
 }
 
 .wrapperBlock {
     display: flex;
+}
+
+@media only screen and (max-width: 1920px) {
+    .wrapper {
+        width: 91%;
+    }
+}
+
+@media only screen and (max-width: 1340px) {
+    body {
+        background-color: #e0e3e5;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 83%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        margin: 55px 0 83px 170px;
+        width: 78%;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .wrapper {
+        margin: 55px 0 83px 70px;
+        width: 83%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .wrapper {
+        width: 81%;
+    }
 }

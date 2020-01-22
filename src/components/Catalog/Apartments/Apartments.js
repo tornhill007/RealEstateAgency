@@ -59,6 +59,7 @@ class Apartments extends React.Component {
         }
         for (let item of filterArray) {
             let input = _.clone(apartments);
+
             if(item === 'room1') {
                 res = _.concat(res, input.filter(item => item.roomAmount == 1));
             }
@@ -132,6 +133,8 @@ class Apartments extends React.Component {
                 res = _.concat(res, input.filter(item => item.repair == '3-5 years'));
             if(item === 'old')
                 res = _.concat(res, input.filter(item => item.repair == '5 Years and Older'));
+            // if(item === 'priceFrom')
+            //     res = _.concat(res, input.filter(item => item.price >= priceFrom));
         }
         return res;
     };

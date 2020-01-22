@@ -293,7 +293,7 @@ let arrayContent = [
         advertName: "Rent Apartments Vinnytsia Zhilyanskaya 59 in Avalon 5",
         desc: "For rent for the first time! 1-room apartment (64 m2) on Shchorsa 34. Renovated, 2 balconies, dishwasher, 1 bathroom ...",
         descriptionFull: "Bright 1-room apartment (50 m2) in an elite complex on Schorsa street 349. Renovated, modern furniture, jacuzzi, shower, dishwasher, dressing room. Parking space in the underground parking is included",
-        location: "Academician Yangel Street 5",
+        location: "Academ. Yangel Street 5",
         complex: "Rainbow",
         district: "Old Town district",
         price: 1500,
@@ -637,7 +637,7 @@ let arrayContent = [
 export let realtorsContent = [
     {
         id: 1,
-        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        photoUrl: "http://keenthemes.com/preview/metronic/theme/assets/pages/media/profile/profile_user.jpg",
         fullName: "Name Surname",
         position: "real estate consultant",
         region: "some region",
@@ -646,7 +646,7 @@ export let realtorsContent = [
     },
     {
         id: 2,
-        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        photoUrl: "http://i.imgur.com/74sByqd.jpg",
         fullName: "Name Surname",
         position: "real estate consultant",
         region: "some region",
@@ -655,7 +655,7 @@ export let realtorsContent = [
     },
     {
         id: 3,
-        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        photoUrl: "http://endlesstheme.com/simplify1.0/images/profile/profile4.jpg",
         fullName: "Name Surname",
         position: "real estate consultant",
         region: "some region",
@@ -664,7 +664,7 @@ export let realtorsContent = [
     },
     {
         id: 4,
-        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        photoUrl: "http://imoblar.com/site/img/demo/profile.jpg",
         fullName: "Name Surname",
         position: "real estate consultant",
         region: "some region",
@@ -673,7 +673,7 @@ export let realtorsContent = [
     },
     {
         id: 5,
-        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        photoUrl: "https://codenpy.com/wpbakery/wp-content/uploads/2018/12/square4.jpg",
         fullName: "Name Surname",
         position: "real estate consultant",
         region: "some region",
@@ -691,7 +691,7 @@ export let realtorsContent = [
     },
     {
         id: 7,
-        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        photoUrl: "http://www.rebsheldtechnologies.com/img/images/profile.jpg",
         fullName: "Sir Alex",
         position: "real estate consultant",
         region: "some region",
@@ -727,7 +727,7 @@ export let realtorsContent = [
     },
     {
         id: 11,
-        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        photoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfA_UjlBEgt0Y6hX0mIqerRttbEqEA1BYna_fAsx49XDMiGzjbHg&s",
         fullName: "Name Surname",
         position: "real estate consultant",
         region: "some region",
@@ -772,7 +772,7 @@ export let realtorsContent = [
     },
     {
         id: 16,
-        photoUrl: "https://www.w3schools.com/howto/img_avatar.png",
+        photoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHbsF3jGlugzKXq2Vi5vDVyrWDW4CTDWQK3jSGtOA9Y0p3OWf&s",
         fullName: "Name Surname",
         position: "real estate consultant",
         region: "some region",

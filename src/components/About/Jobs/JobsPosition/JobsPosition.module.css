@@ -22,7 +22,7 @@
 }
 
 .item {
-    padding: 40px 70px 0 70px;
+    padding: 40px 70px 100px 70px;
     font-size: 1.2em;
 
 }
@@ -41,4 +41,29 @@
 .item a {
     color: #97004E;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+       padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        padding-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .wrapper {
+        margin-left: 50px;
+        padding-bottom: 110px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .wrapper {
+        margin-left: 80px;
+    }
 }

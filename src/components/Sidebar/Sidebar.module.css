@@ -128,10 +128,14 @@
         transition: .3s;
     }
 
-    .menuVertical ul li a{
-        width: 57px;
-        transition: .3s;
+    .listItem .img_n {
+        margin-left: 15px;
     }
+
+    .menuVertical ul li a{
+        padding: 3px 15px;
+    }
+
 
     .menuVertical ul li{
         width: 57px;
@@ -144,7 +148,7 @@
         left: -141px;
     }
 
-    span{
+    .menuVertical span{
         display: none;
     }
 
@@ -170,6 +174,12 @@
 @media screen and (min-width: 1152px){
     .img_n img{
         display: none;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .menuVertical{
+        width: 70px;
     }
 }
 

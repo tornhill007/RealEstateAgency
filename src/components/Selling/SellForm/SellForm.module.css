@@ -29,3 +29,45 @@
     margin-top: 70px;
     margin-left: 20px;
 }
+
+
+@media only screen and (max-width: 1179px) {
+    .itemLists {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    .itemLists {
+        width: 100%;
+    }
+    .wrapperList {
+        margin-bottom: 100px;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 733px) {
+    .wrapperList {
+        width: 280px;
+        padding: 0 0 20px 0;
+        margin: 0 0 200px 0;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .wrapperList {
+        width: 280px;
+        padding: 0 0 30px 0;
+        margin: 0 0 200px 0;
+}
+}
+
+@media only screen and (max-width: 375px) {
+    .wrapperList {
+        padding: 0 0 30px 0;
+        margin: 0 0 160px 0;
+        width: 280px;
+}
+}

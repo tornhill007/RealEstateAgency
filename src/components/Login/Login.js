@@ -58,18 +58,18 @@ const Login = (props) => {
         else {
             var usersArray = [];
         }
-        let user = usersArray.filter(item => item.email == formData.email && item.password == formData.password).pop();
+        let user = usersArray.filter(item => item.email[0] == formData.email && item.password == formData.password).pop();
        // localStorage.setItem("usersArray", JSON.stringify(usersArray));
         console.log(user);
         if(user == undefined) {
             alert('Email of password is not correctly')
         }
+
     };
 
     return <div className={classes.wrapperLogin}>
         <div className={classes.wrapperPage1}>
         <h1 className={classes.name}>Login</h1>
-
         <LoginReduxForm onSubmit={onSubmit}/>
     </div>
     </div>

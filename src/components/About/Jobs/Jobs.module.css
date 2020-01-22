@@ -90,3 +90,26 @@
 .listRow a {
     text-decoration: none;
 }
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        margin-bottom: 130px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .wrapper {
+        margin-left: 70px;
+        margin-bottom: 180px;
+
+    }
+    .head {
+        padding-left: 35px;
+    }
+}

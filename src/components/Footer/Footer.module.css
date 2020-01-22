@@ -3,6 +3,8 @@
     color: floralwhite;
     z-index: 998;
     font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
 }
 
 .socialWrap {
@@ -48,4 +50,22 @@
     box-shadow: 0 0 6px 3px teal;
     border-radius: 50%;
     background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .textLeft {
+        display: none;
+    }
+    .emblemWrap {
+        display: none;
+    }
+    .item img {
+        width: 25%;
+    }
+    .item span{
+        display: block;
+    }
+    .wrap {
+        padding: 0
+    }
 }

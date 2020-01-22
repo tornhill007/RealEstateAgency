@@ -26,3 +26,15 @@
     border: none;
     margin-top: 2px;
 }
+
+@media only screen and (max-width: 414px) {
+    .itemLists {
+        margin-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .itemLists {
+        margin-left: 15px;
+    }
+}

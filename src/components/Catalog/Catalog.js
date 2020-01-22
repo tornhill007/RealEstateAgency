@@ -33,18 +33,20 @@ const Catalog = (props) => {
         console.log(formData);
     };
 
+
+
     return <div>
         <h1 className={classes.head}>Catalog Filter</h1>
         <div className={classes.wrapper}>
             <div className={classes.wrapperBlock}>
                 <div className={classes.itemLeft}>
                     <div className={classes.itemLinkWrap}>
-                        <NavLink to="" className={classes.itemLink}>
+                        <div className={classes.itemLink}>
                             <span>Apartments for rent</span>
-                        </NavLink>
-                        <NavLink to="" className={classes.itemLink}>
+                        </div>
+                        <div className={classes.itemLink}>
                             <span>Sale of apartments</span>
-                        </NavLink>
+                        </div>
                     </div>
                     <div className={classes.wrapContent}>
                     <div>

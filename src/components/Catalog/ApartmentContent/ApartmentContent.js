@@ -64,7 +64,7 @@ render() {
                 </div>
                 <div className={classes.WrapHeadRight}>
                     <div className={classes.itemHeadRight}>Sharing</div>
-                    <div>
+                    <div className={classes.WrapHeadRightSpan}>
                         <span className={classes.btnSubmitApp}>Submit your application</span>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ render() {
 
             <div>
                 <div className={classes.wrapHead}>
-                    <div>
+                    <div className={classes.wrapHeadSpan}>
                         <span>{content.location}</span>
                         <span className={classes.itemGaleryHead}>{content.complex}</span>
                     </div>

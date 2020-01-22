@@ -38,7 +38,7 @@ export class MapContainer extends React.Component {
         // let pathname = props.location.pathname.substr(1).split('/')[1];
         console.log(this.props.pathname);
         return (
-            <Map google={this.props.google} zoom={14} style={!this.props.pathname ? {width: '52.45%'} : {width: '32.55%', height: '66%'} } >
+            <Map className={classes.containerMap} google={this.props.google} zoom={14} style={!this.props.pathname ? {width: '124.8%', height: '87%'} : {width: '77.55%', height: '58%'} } >
 
 
                 {/*{arrayContent.map(u => <Marker onClick={this.onMarkerClick} title={u.desc} key={u.id} name={u.location} position={{lat: u.marker[0], lng: u.marker[1] }} className={classes.wrapperBlock} />)}*/}

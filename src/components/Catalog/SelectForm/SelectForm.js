@@ -37,7 +37,7 @@ class FlavorForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <label className={classes.label}>
                     Sort by:
-                    <select value={this.state.value} onChange={this.handleChange}>
+                    <select className={classes.select} value={this.state.value} onChange={this.handleChange}>
                         <option value="byDate">By date (new - old)</option>
                         <option value="byPriceUp">By price (min - max)</option>
                         <option value="byPriceDown">By price (max - min)</option>

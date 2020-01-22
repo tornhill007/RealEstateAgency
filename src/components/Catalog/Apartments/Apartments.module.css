@@ -116,3 +116,48 @@
 .itemArea {
     font-size: 1.2em;
 }
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .img {
+        height: 193px;
+    }
+    .wrapContentAdd {
+        width: 24%;
+    }
+}
+@media only screen and (max-width: 414px) {
+
+    .wrapContentAdd {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .wrapContent {
+        display: none;
+    }
+    .wrapperBlock {
+
+    }
+    .imgWrap {
+        width: 100%;
+    }
+    .wrapperBlock {
+        flex-direction: column;
+    }
+    .wrapContentAdd .itemArea {
+        display: none;
+    }
+    .wrapContentAdd .itemView {
+        display: none;
+    }
+    .wrapper {
+        margin-bottom: 70px;
+    }
+}
+
