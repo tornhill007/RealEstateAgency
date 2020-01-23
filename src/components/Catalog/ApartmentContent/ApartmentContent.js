@@ -7,10 +7,19 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBuilding, faHome, faLock, faTools} from "@fortawesome/free-solid-svg-icons";
 import {MyGallery} from "./Gallery/Gallery";
 import GoogleApiWrapper from "../../Contacts/Map/Map";
+import {reduxForm} from "redux-form";
+import SellFormContainer from "../../Selling/SellForm/SellFormContainer";
+import SubmitFormContainer from "./SubmitFormContainer";
+
+const SubmitReduxForm = reduxForm({form: 'submitForm'})(SubmitFormContainer)
 
 export class ApartmentContent extends React.Component {
     constructor(props) {
         super(props);
+    }
+
+    onSubmit = (formData) => {
+        console.log(formData);
     }
 // const ApartmentContent = (props) => {
     // if (props.apartmentContent.length === 0) {
@@ -36,6 +45,9 @@ export class ApartmentContent extends React.Component {
 
     onRenderEquip = () => {
         this.setState({isMap: 3})
+    }
+    onRenderForm = () => {
+        this.setState({isMap: 4})
     }
 
 
@@ -65,7 +77,7 @@ render() {
                 <div className={classes.WrapHeadRight}>
                     <div className={classes.itemHeadRight}>Sharing</div>
                     <div className={classes.WrapHeadRightSpan}>
-                        <span className={classes.btnSubmitApp}>Submit your application</span>
+                        <span className={classes.btnSubmitApp} onClick={this.onRenderForm}>Submit your application</span>
                     </div>
                 </div>
             </div>
@@ -205,6 +217,10 @@ render() {
                             </div>
                         </div>
                     </div>}
+                    {isMap == 4 && <div className={classes.submForm}>
+                        <SubmitReduxForm onSubmit={this.onSubmit}/>
+                    </div>}
+
 
 
                 </div>

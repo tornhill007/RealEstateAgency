@@ -46,7 +46,7 @@ class App extends React.Component{
                 {/*<Route exact path="/home">*/}
                 {/*    <MainContainer/>*/}
                 {/*</Route>*/}
-                <Route path="/main">
+                <Route exact path="/">
                     <Main/>
                 </Route>
                 <Route path="/about">

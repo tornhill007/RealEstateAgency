@@ -74,7 +74,7 @@ const Login = (props) => {
         } else {
             // redirect = true;
             //history.push("/");
-            window.location.href = '/main';
+            window.location.href = '/';
         }
 
     };

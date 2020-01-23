@@ -1,0 +1,77 @@
+.container {
+
+}
+
+.wrapperHead {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.wrapperList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 50px 0 50px;
+    margin: 20px 70px 30px 50px;
+    box-shadow: 0 0 6px 3px teal;
+    flex-direction: column;
+}
+
+.itemLists {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+}
+
+
+
+.itemBtn {
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1179px) {
+    .itemLists {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    .itemLists {
+        width: 100%;
+    }
+    .wrapperList {
+        margin-bottom: 100px;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 733px) {
+    .wrapperList {
+        width: 280px;
+        padding: 0 0 20px 0;
+        margin: 0 0 200px 0;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .wrapperList {
+        width: 280px;
+        padding: 0 0 30px 0;
+        margin: 0 0 200px 0;
+}
+}
+
+@media only screen and (max-width: 375px) {
+    .wrapperList {
+        padding: 0 0 30px 0;
+        margin: 0 0 160px 0;
+        width: 280px;
+}
+}

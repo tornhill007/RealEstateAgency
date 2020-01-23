@@ -44,7 +44,7 @@ const Header = (props) => {
                     {props.isAuth && <div className={classes.userName}><span>Welcome </span>{props.user.name}</div>}
 
                     {!props.isAuth && <Nav.Link as={Link} to="/login" className={classes.item}>Sign in</Nav.Link>}
-                    {props.isAuth && <button onClick={logout}>logout</button>}
+                    {props.isAuth && <button onClick={logout} className={classes.logoutBtn}>logout</button>}
                     {!props.isAuth && <Nav.Link as={Link} to="/register">
                             Sign up
                         </Nav.Link>}

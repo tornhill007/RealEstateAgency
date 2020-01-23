@@ -24,3 +24,21 @@
     margin-right: 30px;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+    .logoutBtn {
+        width: 10%;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .logoutBtn {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logoutBtn {
+        width: 20%;
+    }
+}
