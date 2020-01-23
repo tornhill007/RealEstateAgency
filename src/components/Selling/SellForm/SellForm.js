@@ -50,7 +50,7 @@ const SellForm = (props) => {
                 <ImageUpload/>
             </div>
             <div className={classes.itemBtn}>
-                <button className={classes.submit}>Send request</button>
+                {props.isAuth ? <button className={classes.submit}>Send request</button> : <div><span>You should login in order to add review</span></div>}
             </div>
         </div>
     </form>

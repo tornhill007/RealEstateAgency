@@ -2,10 +2,11 @@ import React from 'react';
 import classes from './Selling.module.css';
 import {reduxForm} from "redux-form";
 import SellForm from "./SellForm/SellForm";
+import SellFormContainer from "./SellForm/SellFormContainer";
 
 
 
-const SellReduxForm = reduxForm({form: 'sell'})(SellForm)
+const SellReduxForm = reduxForm({form: 'sell'})(SellFormContainer)
 
 const Selling = () => {
 

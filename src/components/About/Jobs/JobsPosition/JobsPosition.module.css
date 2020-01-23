@@ -43,6 +43,11 @@
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1920px) {
+    .wrapper {
+       padding-bottom: 70px;
+    }
+}
 @media only screen and (max-width: 1024px) {
     .wrapper {
        padding-bottom: 30px;

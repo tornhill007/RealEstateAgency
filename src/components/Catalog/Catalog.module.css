@@ -99,6 +99,11 @@
     padding: 15px 0 15px 0;
 }
 
+@media only screen and (max-width: 1920px) {
+    .wrapper {
+        margin-bottom: 112px;
+    }
+}
 @media only screen and (max-width: 1024px) {
     .wrapperBlock {
         flex-direction: column;

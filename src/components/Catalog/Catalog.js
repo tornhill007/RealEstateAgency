@@ -11,6 +11,7 @@ import DistrictForm from "./SelectForm/DistrictForm";
 import ComplexForm from "./SelectForm/ComplexForm";
 import BuildingForm from "./SelectForm/BuildingForm";
 import RepairForm from "./SelectForm/RepairForm";
+import {setFilterPrice} from "../../reducers/FilterReducer";
 
 
 const PriceReduxForm = reduxForm({form: 'price'})(PriceForm);
@@ -23,14 +24,26 @@ const RepairReduxForm = reduxForm({form: 'repair'})(RepairForm);
 
 const Catalog = (props) => {
     const onSubmit = (formData) => {
-        const { setFilterRooms } = props;
-        let filters = [];
+        const { setFilterRooms, filterRooms, priceFilter, areaFilter, setFilterArea, setFilterPrice } = props;
+        let tmp = filterRooms;
+        let priceFilterTMP = priceFilter;
+        let areaFilterTMP = areaFilter;
+
+        areaFilterTMP.areaFrom = formData['areaFrom'] === undefined ? undefined : Number(formData['areaFrom']);
+        areaFilterTMP.areaTo = formData['areaTo'] === undefined ? undefined : Number(formData['areaTo']);
+
+        priceFilterTMP.priceFrom = formData['priceFrom'] === undefined ? undefined : Number(formData['priceFrom']);
+        priceFilterTMP.priceTo = formData['priceTo'] === undefined ? undefined : Number(formData['priceTo']);
+
         for (let item in formData) {
             if(formData[item] === true)
-                filters.push(item);
+                tmp.push(item);
+            else if (formData[item] === false)
+                tmp = tmp.filter((value, index, arr) => value !== item);
         }
-        setFilterRooms(filters);
-        console.log(formData);
+        setFilterArea(areaFilterTMP);
+        setFilterPrice(priceFilterTMP);
+        setFilterRooms(tmp.filter((v, i, a) => a.indexOf(v) === i));
     };
 
 

@@ -35,6 +35,11 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 1920px) {
+    .wrapper {
+        padding-bottom: 140px;
+    }
+}
 @media only screen and (max-width: 768px) {
     .wrapper {
         /*margin-left: 60px;*/

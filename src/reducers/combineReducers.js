@@ -18,6 +18,7 @@ export default combineReducers({
     apartmentsPage: ApartmentsReducer,
     contentPage: ApartmentContentReducer,
     profilePage: profileReducer,
-    filterPage: FilterReducer
+    filterPage: FilterReducer,
+    loginPage: userReducer
 
 });

@@ -4,13 +4,16 @@ import {Input} from "../../common/FormsControl/FormsControl";
 import {required} from "../../utils/validator";
 import {connect} from "react-redux";
 import {login} from "../../reducers/authReducer";
-import {Redirect} from "react-router-dom";
+import {Redirect, useHistory} from "react-router-dom";
 import classes from './Login.module.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUser, faLock} from '@fortawesome/free-solid-svg-icons'
 
 
 const LoginForm = (props) => {
+
+
+
     return (
 
         <div className={classes.container}>
@@ -51,6 +54,8 @@ const LoginForm = (props) => {
 
 const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
 const Login = (props) => {
+    let history = useHistory();
+    let redirect = false;
     const onSubmit = (formData) => {
         if(localStorage.getItem ("usersArray") != null) {
             var usersArray = JSON.parse (localStorage.getItem ("usersArray"));
@@ -61,8 +66,15 @@ const Login = (props) => {
         let user = usersArray.filter(item => item.email[0] == formData.email && item.password == formData.password).pop();
        // localStorage.setItem("usersArray", JSON.stringify(usersArray));
         console.log(user);
-        if(user == undefined) {
+
+        localStorage.setItem("user", JSON.stringify(user));
+
+        if(user === undefined) {
             alert('Email of password is not correctly')
+        } else {
+            // redirect = true;
+            //history.push("/");
+            window.location.href = '/main';
         }
 
     };
@@ -72,6 +84,7 @@ const Login = (props) => {
         <h1 className={classes.name}>Login</h1>
         <LoginReduxForm onSubmit={onSubmit}/>
     </div>
+        {redirect && <Redirect to="/" />}
     </div>
 };
 

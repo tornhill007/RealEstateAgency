@@ -24,7 +24,19 @@ import ApartmentContentContainer from "./components/Catalog/ApartmentContent/Apa
 import ReviewsContainer from "./components/Reviews/ReviewsContainer";
 
 
-function App() {
+class App extends React.Component{
+    constructor(props) {
+        super(props);
+    }
+    componentDidMount() {
+        if(localStorage.getItem ("usersArray") != null) {
+            let usersArray = JSON.parse (localStorage.getItem ("user"));
+            if (usersArray !== {} && usersArray !== undefined && usersArray !== null)
+                this.props.logIn(usersArray);
+        }
+    }
+
+    render(){
     return (
         <div>
             <HeaderContainer/>
@@ -74,6 +86,7 @@ function App() {
             <Footer/>
         </div>
     );
+};
 }
 
 export default App;

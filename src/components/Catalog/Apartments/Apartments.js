@@ -3,13 +3,20 @@ import _ from 'lodash';
 import classes from './Apartments.module.css';
 import {NavLink} from "react-router-dom";
 import arrayContent from "../../../common/arrayContent";
+import intersect from "../../../utils/helpers";
 import useWrappedRefWithWarning from "react-bootstrap/cjs/useWrappedRefWithWarning";
 
 class Apartments extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { sort: 'byDate', apartments: [],
-            rooms: []};
+        this.state = {
+            sort: 'byDate',
+            apartments: [],
+            rooms: [],
+            district: [],
+            priceFilter: {},
+            areaFilter: {}
+        };
 
         if (props.apartments.length === 0) {
             props.setApartments(arrayContent)
@@ -21,7 +28,9 @@ class Apartments extends React.Component {
         return {
             sort : nextProps.sort,
             apartments: nextProps.apartments,
-            rooms: nextProps.filterRooms
+            rooms: nextProps.filterRooms,
+            priceFilter: nextProps.priceFilter,
+            areaFilter: nextProps.areaFilter
         };
     }
 
@@ -54,9 +63,8 @@ class Apartments extends React.Component {
 
     filterArray = (filterArray, apartments) => {
         let res = [];
-        if(filterArray.length === 0) {
-            res = _.clone(apartments);
-        }
+        let filters = ['room1', 'room2', 'room3', 'room4', 'room5', 'room6', 'House', 'Penthouse'];
+        let isFiltered = intersect(filterArray, filters);
         for (let item of filterArray) {
             let input = _.clone(apartments);
 
@@ -77,75 +85,220 @@ class Apartments extends React.Component {
                 res = _.concat(res, input.filter(item => item.house == true));
             if(item === 'Penthouse')
                 res = _.concat(res, input.filter(item => item.penthouse == true));
-            if(item === 'zamostya')
-                res = _.concat(res, input.filter(item => item.district == 'Zamostyansk district'));
-            if(item === 'leninsky')
-                res = _.concat(res, input.filter(item => item.district == 'Leninsky district'));
-            if(item === 'oldTown')
-                res = _.concat(res, input.filter(item => item.district == 'Old Town district'));
-            if(item === 'west')
-                res = _.concat(res, input.filter(item => item.complex == 'West'));
-            if(item === 'family')
-                res = _.concat(res, input.filter(item => item.complex == 'Family comfort'));
-            if(item === 'pearl')
-                res = _.concat(res, input.filter(item => item.complex == 'Pearl of Podillya'));
-            if(item === 'greens')
-                res = _.concat(res, input.filter(item => item.complex == 'Green\'s'));
-            if(item === 'premier')
-                res = _.concat(res, input.filter(item => item.complex == 'Premier Tower'));
-            if(item === 'dawn')
-                res = _.concat(res, input.filter(item => item.complex == 'Dawn'));
-            if(item === 'academic')
-                res = _.concat(res, input.filter(item => item.complex == 'Academic residential district'));
-            if(item === 'avalon')
-                res = _.concat(res, input.filter(item => item.complex == 'Avalon 5'));
-            if(item === 'teachers')
-                res = _.concat(res, input.filter(item => item.complex == 'Teacher\'st'));
-            if(item === 'comfort')
-                res = _.concat(res, input.filter(item => item.complex == 'Comfort'));
-            if(item === 'turkish')
-                res = _.concat(res, input.filter(item => item.complex == 'Turkish City'));
-            if(item === 'rainbow')
-                res = _.concat(res, input.filter(item => item.complex == 'Rainbow'));
-            if(item === 'sofia')
-                res = _.concat(res, input.filter(item => item.complex == 'Sofia'));
-            if(item === 'prestige')
-                res = _.concat(res, input.filter(item => item.complex == 'Prestige Hall'));
-            if(item === 'riviera')
-                res = _.concat(res, input.filter(item => item.complex == 'Riviera'));
-            if(item === 'waterfront')
-                res = _.concat(res, input.filter(item => item.complex == 'Quay waterfront'));
-            if(item === 'residence')
-                res = _.concat(res, input.filter(item => item.complex == 'Residence'));
-            if(item === 'newBuilding')
-                res = _.concat(res, input.filter(item => item.building == 'New building'));
-            if(item === 'khrushchev')
-                res = _.concat(res, input.filter(item => item.building == 'Khrushchev'));
-            if(item === 'stalinka')
-                res = _.concat(res, input.filter(item => item.building == 'Stalinka'));
-            if(item === 'royal')
-                res = _.concat(res, input.filter(item => item.building == 'Royal House'));
-            if(item === 'firstRent')
-                res = _.concat(res, input.filter(item => item.repair == 'First Rent'));
-            if(item === 'young')
-                res = _.concat(res, input.filter(item => item.repair == '1-2 years'));
-            if(item === 'middle')
-                res = _.concat(res, input.filter(item => item.repair == '3-5 years'));
-            if(item === 'old')
-                res = _.concat(res, input.filter(item => item.repair == '5 Years and Older'));
+            // if(item === 'west')
+            //     res = _.concat(res, input.filter(item => item.complex == 'West'));
+            // if(item === 'family')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Family comfort'));
+            // if(item === 'pearl')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Pearl of Podillya'));
+            // if(item === 'greens')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Green\'s'));
+            // if(item === 'premier')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Premier Tower'));
+            // if(item === 'dawn')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Dawn'));
+            // if(item === 'academic')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Academic residential district'));
+            // if(item === 'avalon')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Avalon 5'));
+            // if(item === 'teachers')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Teacher\'st'));
+            // if(item === 'comfort')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Comfort'));
+            // if(item === 'turkish')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Turkish City'));
+            // if(item === 'rainbow')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Rainbow'));
+            // if(item === 'sofia')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Sofia'));
+            // if(item === 'prestige')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Prestige Hall'));
+            // if(item === 'riviera')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Riviera'));
+            // if(item === 'waterfront')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Quay waterfront'));
+            // if(item === 'residence')
+            //     res = _.concat(res, input.filter(item => item.complex == 'Residence'));
+            // if(item === 'newBuilding')
+            //     res = _.concat(res, input.filter(item => item.building == 'New building'));
+            // if(item === 'khrushchev')
+            //     res = _.concat(res, input.filter(item => item.building == 'Khrushchev'));
+            // if(item === 'stalinka')
+            //     res = _.concat(res, input.filter(item => item.building == 'Stalinka'));
+            // if(item === 'royal')
+            //     res = _.concat(res, input.filter(item => item.building == 'Royal House'));
+            // if(item === 'firstRent')
+            //     res = _.concat(res, input.filter(item => item.repair == 'First Rent'));
+            // if(item === 'young')
+            //     res = _.concat(res, input.filter(item => item.repair == '1-2 years'));
+            // if(item === 'middle')
+            //     res = _.concat(res, input.filter(item => item.repair == '3-5 years'));
+            // if(item === 'old')
+            //     res = _.concat(res, input.filter(item => item.repair == '5 Years and Older'));
+
             // if(item === 'priceFrom')
             //     res = _.concat(res, input.filter(item => item.price >= priceFrom));
         }
+
+        if(filterArray.length === 0 || !isFiltered) {
+            res = _.clone(apartments);
+        }
+
+        res = this.filterArrayDistrict(filterArray, res);
+
+        return res;
+    };
+
+    filterArrayDistrict = (filterArray, apartments) => {
+        let res = [];
+        let filters = ['zamostya', 'leninsky', 'oldTown'];
+        let isFiltered = intersect(filterArray, filters);
+        if (filterArray.length === 0) {
+            res = _.clone(apartments);
+        }
+        for (let item of filterArray) {
+            let input = _.clone(apartments);
+
+            if(item === 'zamostya')
+                res = _.concat(res, input.filter(item => item.district === 'Zamostyansk district'));
+            if(item === 'leninsky')
+                res = _.concat(res, input.filter(item => item.district === 'Leninsky district'));
+            if(item === 'oldTown')
+                res = _.concat(res, input.filter(item => item.district === 'Old Town district'));
+        }
+        if(filterArray.length === 0 || !isFiltered) {
+            res = _.clone(apartments);
+        }
+        res = this.filterArrayComplex(filterArray, res);
+        return res;
+    };
+
+    filterArrayComplex = (filterArray, apartments) => {
+        let res = [];
+        let filters = ['west', 'family', 'pearl', 'greens', 'premier', 'dawn', 'academic', 'avalon', 'teachers', 'comfort', 'turkish', 'rainbow', 'sofia', 'prestige', 'riviera', 'waterfront', 'residence',];
+        let isFiltered = intersect(filterArray, filters);
+        if (filterArray.length === 0) {
+            res = _.clone(apartments);
+        }
+        for (let item of filterArray) {
+            let input = _.clone(apartments);
+
+            if(item === 'west')
+                res = _.concat(res, input.filter(item => item.complex === 'West'));
+            if(item === 'family')
+                res = _.concat(res, input.filter(item => item.complex === 'Family comfort'));
+            if(item === 'pearl')
+                res = _.concat(res, input.filter(item => item.complex === 'Pearl of Podillya'));
+            if(item === 'greens')
+                res = _.concat(res, input.filter(item => item.complex === 'Green\'s'));
+            if(item === 'premier')
+                res = _.concat(res, input.filter(item => item.complex === 'Premier Tower'));
+            if(item === 'dawn')
+                res = _.concat(res, input.filter(item => item.complex === 'Dawn'));
+            if(item === 'academic')
+                res = _.concat(res, input.filter(item => item.complex === 'Academic residential district'));
+            if(item === 'avalon')
+                res = _.concat(res, input.filter(item => item.complex === 'Avalon 5'));
+            if(item === 'teachers')
+                res = _.concat(res, input.filter(item => item.complex === 'Teacher\'st'));
+            if(item === 'comfort')
+                res = _.concat(res, input.filter(item => item.complex === 'Comfort'));
+            if(item === 'turkish')
+                res = _.concat(res, input.filter(item => item.complex === 'Turkish City'));
+            if(item === 'rainbow')
+                res = _.concat(res, input.filter(item => item.complex === 'Rainbow'));
+            if(item === 'sofia')
+                res = _.concat(res, input.filter(item => item.complex === 'Sofia'));
+            if(item === 'prestige')
+                res = _.concat(res, input.filter(item => item.complex === 'Prestige Hall'));
+            if(item === 'riviera')
+                res = _.concat(res, input.filter(item => item.complex === 'Riviera'));
+            if(item === 'waterfront')
+                res = _.concat(res, input.filter(item => item.complex === 'Quay waterfront'));
+            if(item === 'residence')
+                res = _.concat(res, input.filter(item => item.complex === 'Residence'));
+        }
+        if(filterArray.length === 0 || !isFiltered) {
+            res = _.clone(apartments);
+        }
+        res = this.filterArrayBuilding(filterArray, res);
+        return res;
+    };
+
+    filterArrayBuilding = (filterArray, apartments) => {
+        let res = [];
+        let filters = ['newBuilding', 'khrushchev', 'stalinka', 'royal'];
+        let isFiltered = intersect(filterArray, filters);
+        if (filterArray.length === 0) {
+            res = _.clone(apartments);
+        }
+        for (let item of filterArray) {
+            let input = _.clone(apartments);
+
+            if(item === 'newBuilding')
+                res = _.concat(res, input.filter(item => item.building === 'New building'));
+            if(item === 'khrushchev')
+                res = _.concat(res, input.filter(item => item.building === 'Khrushchev'));
+            if(item === 'stalinka')
+                res = _.concat(res, input.filter(item => item.building === 'Stalinka'));
+            if(item === 'royal')
+                res = _.concat(res, input.filter(item => item.building === 'Royal House'));
+        }
+        if(filterArray.length === 0 || !isFiltered) {
+            res = _.clone(apartments);
+        }
+
+        res = this.filterArrayRepair(filterArray, res);
+        return res;
+    };
+
+    filterArrayRepair = (filterArray, apartments) => {
+        let res = [];
+        let filters = ['firstRent', 'young', 'middle', 'old'];
+        let isFiltered = intersect(filterArray, filters);
+        if (filterArray.length === 0) {
+            res = _.clone(apartments);
+        }
+        for (let item of filterArray) {
+            let input = _.clone(apartments);
+
+            if(item === 'firstRent')
+                res = _.concat(res, input.filter(item => item.repair === 'First Rent'));
+            if(item === 'young')
+                res = _.concat(res, input.filter(item => item.repair === '1-2 years'));
+            if(item === 'middle')
+                res = _.concat(res, input.filter(item => item.repair === '3-5 years'));
+            if(item === 'old')
+                res = _.concat(res, input.filter(item => item.repair === '5 Years and Older'));
+        }
+        if(filterArray.length === 0 || !isFiltered) {
+            res = _.clone(apartments);
+        }
+
+
+        return res;
+    };
+
+    inputsFilter = (areaFilter, priceFilter, apartments) => {
+        let res = [];
+        let input = _.clone(apartments);
+        res = _.concat(res, input.filter(item => ((areaFilter.areaFrom === undefined || Number(item.area) >= areaFilter.areaFrom) && (areaFilter.areaTo === undefined || Number(item.area) <= areaFilter.areaTo))));
+
+        input = _.clone(res);
+        res = input.filter(item => ((priceFilter.priceFrom === undefined || Number(item.price) >= priceFilter.priceFrom) && (priceFilter.priceTo === undefined || Number(item.price) <= priceFilter.priceTo)));
+
         return res;
     };
 
     render() {
-        const { sort, apartments, rooms } = this.state;
+        const { sort, apartments, rooms, areaFilter, priceFilter} = this.state;
 
-        const filter = this.filterArray(rooms, apartments);
+        // const filterDistrict = filterArrayDistrict(district, filter)
+        let filter = this.filterArray(rooms, apartments);
+        filter = this.inputsFilter(areaFilter, priceFilter, filter);
         const content = this.sortArray(sort, filter);
 
-        console.log(content);
+        // console.log(areaFilter, priceFilter);
         return (<div>
             <div className={classes.wrapper}>
                 {

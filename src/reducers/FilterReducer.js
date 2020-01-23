@@ -13,18 +13,16 @@ const initState = {
     totalRealtorsCount: 20,
     currentPage: 1,
     sort: 'byDate',
-    priceFrom: '',
-    priceTo: '',
-    areaFrom: '',
-    areaTo: '',
-    rooms: [],
-    district: [],
-    complex: [],
-    building: [],
-    repair: [],
+    priceFrom: undefined,
+    priceTo: undefined,
+    areaFrom: undefined,
+    areaTo: undefined,
+    rooms: []
 };
 
 export default (state = initState, action) => {
+    console.log(action);
+    console.log(state);
     switch(action.type) {
         case SET_APARTMENTS: {
             return {...state, apartments: action.apartments}
@@ -33,13 +31,13 @@ export default (state = initState, action) => {
             return {...state, currentPage: action.currentPage}
         }
         case SET_FILTER_PRICE: {
-            return {...state, priceFrom: action.priceFrom, priceTo: action.priceTo}
+            return {...state, priceFrom: action.filterPrice.priceFrom, priceTo: action.filterPrice.priceTo}
         }
         case SET_FILTER_ROOMS: {
             return {...state, rooms: action.filterRooms}
         }
         case SET_FILTER_AREA: {
-            return {...state, areaFrom: action.areaFrom, areaTo: action.areaTo}
+            return {...state, areaFrom: action.filterArea.areaFrom, areaTo: action.filterArea.areaTo}
         }
         case SET_FILTER_DISTRICT: {
             return {...state, district: [...state.district, action.district]}

@@ -12,6 +12,8 @@ let mapStateToProps = (state) => {
         currentPage: state.realtorsPage.currentPage,
         sort: state.apartmentsPage.sort,
         filterRooms: state.filterPage.rooms,
+        priceFilter: {priceFrom: state.filterPage.priceFrom, priceTo: state.filterPage.priceTo},
+        areaFilter: { areaFrom: state.filterPage.areaFrom, areaTo: state.filterPage.areaTo}
     }
 };
 

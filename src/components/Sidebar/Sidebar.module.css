@@ -128,14 +128,15 @@
         transition: .3s;
     }
 
-    .listItem .img_n {
-        margin-left: 15px;
+    .menuVertical ul li a {
+        width: 57px;
+        transition: .3s;
     }
 
-    .menuVertical ul li a{
-        padding: 3px 15px;
+    .listItem {
+        width: 57px;
+        transition: .3s;
     }
-
 
     .menuVertical ul li{
         width: 57px;

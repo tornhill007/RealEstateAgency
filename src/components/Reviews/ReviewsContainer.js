@@ -6,7 +6,8 @@ import {addNewPostActionCreator, onPostChangeActionCreator} from "../../reducers
 const mapStateToProps = (state) => {
     return {
         posts: state.profilePage.posts,
-        newPostText: state.profilePage.newPostText
+        newPostText: state.profilePage.newPostText,
+        isAuth: state.loginPage.isAuth
     }
 };
 

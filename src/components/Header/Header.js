@@ -4,6 +4,15 @@ import classes from './Header.module.css';
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 
 const Header = (props) => {
+    console.log(props.user)
+    console.log(props.isAuth)
+    let logout = () => {
+        var user = JSON.parse(localStorage.getItem('user'));
+        localStorage.removeItem('user');
+        // localStorage.setItem('user', JSON.stringify(user));
+        window.location.href = '/login';
+        return props.logout;
+    }
     return <div className={classes.wrap1}>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand as={Link} to="/main">Sky Agency</Navbar.Brand>
@@ -32,11 +41,14 @@ const Header = (props) => {
                     <Nav.Link as={Link} to="/reviews">Reviews</Nav.Link>
                 </Nav>
                 <Nav>
-                    {props.isAuth ? <div>{props.login} - <button onClick={props.logout}>logout</button></div> :
-                        <Nav.Link as={Link} to="/login" className={classes.item}>Sign in</Nav.Link>}
-                    <Nav.Link as={Link} to="/register">
-                        Sign up
-                    </Nav.Link>
+                    {props.isAuth && <div className={classes.userName}><span>Welcome </span>{props.user.name}</div>}
+
+                    {!props.isAuth && <Nav.Link as={Link} to="/login" className={classes.item}>Sign in</Nav.Link>}
+                    {props.isAuth && <button onClick={logout}>logout</button>}
+                    {!props.isAuth && <Nav.Link as={Link} to="/register">
+                            Sign up
+                        </Nav.Link>}
+
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
